@@ -40,7 +40,9 @@ sous Excel. Ces outils permettent entre autre d'automatiser sous excel:
 
 ```{mermaid theme="neutral"}
 
-flowchart LR
+%%| fig.width: 3
+
+flowchart TD
 A[Fichier setup] --> B[Fichier designer]
 G[Geobase] -->B
 B --> C[Linelist v.1]

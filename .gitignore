@@ -1,2 +1,3 @@
-exercise/en/demo_exercise_en_files/
-exercise/fr/demo_exercise_fr_files/
+**/demo_exercise_en_files/
+**/demo_exercise_fr_files/
+*.text

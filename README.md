@@ -38,7 +38,9 @@ in Excel. Among other things, these tools allow you to automate:
 
 ``` mermaid
 
-flowchart LR
+%%|fig.width: 2
+
+flowchart TD
 A[Setup File] --> B[Designer File]
 G[Geobase] -->B
 B --> C[Linelist v.1]

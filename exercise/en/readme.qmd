@@ -1,5 +1,5 @@
 ---
-title: "Show case of outbreak-tools usage"
+title: ""
 subtitle: ""
 lang: en
 format: 
@@ -24,7 +24,6 @@ affiliations:
 
 <p align="center">
 
-# Outbreak-Tools demo
 _Excercises and show-case of [outbreak-tools](https://github.com/epicentre-msf/outbreak-tools/) and [outbreak-tools-setup](https://github.com/epicentre-msf/outbreak-tools-setup/)._
 
 

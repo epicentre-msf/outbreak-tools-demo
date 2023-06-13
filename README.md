@@ -4,8 +4,6 @@
 
 <p align="center">
 
-# Outbreak-Tools demo
-
 *Excercises and show-case of
 [outbreak-tools](https://github.com/epicentre-msf/outbreak-tools/) and
 [outbreak-tools-setup](https://github.com/epicentre-msf/outbreak-tools-setup/).*

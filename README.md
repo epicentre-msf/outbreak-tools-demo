@@ -3,7 +3,7 @@
 <p align="center">
 
 ## Outbreak-Tools demo
-_Excercises and show-case of [outbreak-tools](https://github.com/epicentre-msf/outbreak-tools/) using [outbreak-tools-setup](https://github.com/epicentre-msf/outbreak-tools-setup/)_
+_Excercises and show-case of [outbreak-tools](https://github.com/epicentre-msf/outbreak-tools/) and [outbreak-tools-setup](https://github.com/epicentre-msf/outbreak-tools-setup/)._
 
 
 [![Download all the materials of the demo](https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/materials.svg)](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip)

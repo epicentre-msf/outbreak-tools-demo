@@ -60,7 +60,7 @@ du _setup_. La procédure de création de la linelist se fait donc en 3 étapes:
 
 
 1- Définir ses besoins dans le fichier setup: 
-La configuration du fichier s'inspire de celle des formulaires XLS de Kobo. Cela ne nécessite pas a priori une connaissance approfondie de excel. Un fichier setup est défini par maladie, et peut créer des linelist dans plusieurs langues.
+La configuration du fichier s'inspire de celle des formulaires XLS de Kobo. Cela ne nécessite pas a priori une connaissance approfondie de excel. Un fichier setup est défini par maladie, et peut permettre de créer des linelist dans plusieurs langues.
 
 
 2- Télécharger les données géographiques de la zone cible:
@@ -105,7 +105,7 @@ Il existe [une application](https://reports.msf.net/secure/app/outbreak-tools-ge
   - A la section _Admission_, juste avant la sous-section _hospitalisation_:
     - `muac` (MUAC) qui prend trois valeurs: "Vert (125+mm)", "Jaune (115-124mm)", "Rouge (< 115mm)"
 
-  - A la section _Vaccination_, juste après _Vaccination controle la rougeole_:
+  - A la section _Vaccination_, juste après _Vacciné contre la rougeole_:
     - `vacci_measles_doses` (Nombre de doses reçues) qui est une variable numériques.
     - Ajoutez à cette variable une validation pour s'assurer qu'elle est comprise entre 0 et 4
 
@@ -131,12 +131,12 @@ On décide d'ajouter dans le fichier des analyses sur les `outcome`.
 
 - Ouvrez le setup `setup_measles_base_ex3.xlsb`.
 
-- Dans la feuille analyses, ajoutez une table univariée portant sur le nombre de patients par type de sortie. Ajoutez les pourcentages et un graphe pour cette table.
+- Dans la feuille analyses, ajoutez une table univariée portant sur le nombre de patients par type de sortie. Ajoutez les pourcentages et un graphique pour cette table.
 
-- Dans la feuille analyses, ajoutez une table temporelle portant sur l'évolution des type de sortie par date de notification. Ajoutez une l'option pourcentage en lignes, et n'ajoutez pas de total.
+- Dans la feuille analyses, ajoutez une table temporelle portant sur l'évolution des type de sortie par date de notification. Ajoutez une l'option pourcentage en ligne, et n'ajoutez pas de total.
 
 - Dans la feuille analyses, ajoutez un graph sur les types de sorties. Dans
-les spécifications du graphe, représentez le nombre de décédés par date de notification, en barre.
+les spécifications du graphique, représentez le nombre de décédés par date de notification, en barre.
 
 - Traduisez tous les labels en Français
 

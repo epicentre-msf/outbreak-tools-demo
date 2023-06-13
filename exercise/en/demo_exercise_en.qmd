@@ -60,7 +60,7 @@ of the _setup_. The linelist creation procedure is a 3-step process:
 
 
 1- Define your needs in the setup file: 
-The configuration of the file is inspired from Kobo's XLS forms. No in-depth knowledge of Excel is required. A setup file is defined by disease, and can create linelists in several languages.
+The configuration of the file is inspired from Kobo's XLS forms. No in-depth knowledge of Excel is required. A setup file is defined by disease, and can be used to create linelists in several languages.
 
 
 2- Download geographic data for the targeted area:
@@ -106,7 +106,7 @@ This series of 3 exercises explores the possibilities mentioned above, using a m
   - In the _Admission_ section, just before the _hospitalization_ sub-section:
     - `muac` (MUAC) which takes three values: "Green (125+mm)", "Yellow (115-124mm)", "Red (< 115mm)"
 
-  - In the _Vaccination_ section, just after _Vaccination controls measles_:
+  - In the _Vaccination_ section, just after _Vaccination against measles_:
     - `vacci_measles_doses` (Number of doses received) which is a numeric variable.
     - Add a validation to this variable to make sure it's between 0 and 4.
 
@@ -134,7 +134,7 @@ We've decided to add some analyses to the `outcome` file.
 
 - In the analyses sheet, add a univariate table showing the number of patients by type of discharge. Add percentages and a graph for this table.
 
-- In the analyses sheet, add a temporal table showing the evolution of discharge types by notification date. Add a percentage option in rows, and do not add a total.
+- In the analyses sheet, add a temporal table showing the evolution of discharge types by notification date. Add a percentage option in row, and do not add a total.
 
 - In the analysis sheet, add a graph of output types. In
 graph specifications, represent the number of deaths per notification date, in bars.

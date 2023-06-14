@@ -7,6 +7,7 @@ format:
       theme: default
       toc: true
       standalone: true
+      embed-resources: true
     pdf: default
     docx: default
 authors:
@@ -91,7 +92,7 @@ This series of 3 exercises explores the possibilities mentioned above, using a m
 
 ## Exercise 1: Exploration.
 
-- Open the file `linelist_measles_en_ex1.xlsb`. The file password is 1234.
+- Open the file `linelist_measles_en_ex1.xlsb`. The file password is 5678.
 
 - Browse the linelist sheets.
 
@@ -99,16 +100,16 @@ This series of 3 exercises explores the possibilities mentioned above, using a m
 
 - Explore univariate, bivariate and temporal analyses. Recompute the same analyses by filtering on people under 2 years of age.
 
-- Export the filtered data with the anonymous export for MSF.
+- Export the filtered data with the anonymous export for MSF. If you don't change the export password, the password is 605637.
 
 ## Exercise 2: Modifying the setup file
 
 - Open the setup file `setup_measles_base_ex2.xlsb`. We want to add the following variables:
 
-  - In the _Admission_ section, just before the _hospitalization_ sub-section:
+  - In the _Admission_ section of _Linelist patients_ sheet, just before the _hospitalisation_ sub-section:
     - `muac` (MUAC) which takes three values: "Green (125+mm)", "Yellow (115-124mm)", "Red (< 115mm)"
 
-  - In the _Vaccination_ section, just after _Vaccination against measles_:
+  - In the _Vaccination_  section of _Linelist patients_ sheet, just after _Vaccination against measles_:
     - `vacci_measles_doses` (Number of doses received) which is a numeric variable.
     - Add a validation to this variable to make sure it's between 0 and 4.
 
@@ -125,7 +126,7 @@ _You should normally have a configuration file identical to `setup_measles_exerc
 `linelist_measles_en_ex2` in the demo folder, making sure you've selected English as the language. 
 You'll use the file `geobase-cod-2023-03-13_20230612.xlsb` as your geobase.
 
-- Import the data `import_linelist_en.xlsb` into the linelist. Look at the data that has not been imported and browse the data in the generated linelist.
+- Import the data `import_linelist_en.xlsx` into the linelist. Look at the data that has not been imported and browse the data in the generated linelist. 
 
 
 ## Exercise 3: Analysis
@@ -136,7 +137,7 @@ We've decided to add some analyses to the `outcome` file.
 
 - In the analyses sheet, add a univariate table showing the number of patients by type of discharge. Add percentages and a graph for this table.
 
-- In the analyses sheet, add a temporal table showing the evolution of discharge types by notification date. Add a percentage option in row, and do not add a total.
+- In the analyses sheet, add a temporal table showing the evolution of type of discharge by notification date. Add a percentage option in row, and add a total.
 
 - In the analysis sheet, add a graph of output types. In
 graph specifications, represent the number of deaths per notification date, in bars.

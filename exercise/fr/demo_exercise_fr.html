@@ -128,16 +128,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div>
 <div>
-<pre class="mermaid mermaid-js">%%| fig.width: 3
+<pre class="mermaid mermaid-js">%%|fig.width: 2
 
 flowchart TD
-A[Fichier setup] --&gt; B[Fichier designer]
+A[setup] --&gt; B[designer]
 G[Geobase] --&gt;B
 B --&gt; C[Linelist v.1]
-C --&gt; F(Evolution vers une nouvelle version)
+C --&gt; F(Nouvelle version)
 C --&gt; E(Export: MSF, MoH, Données brutes.)
-E --&gt; I(Import dans une nouvelle version)
-E --&gt; H(Partage, centralisation)
+E --&gt; I(Import dans la nouvelle version)
+E --&gt; H(Partage, ..)
 F --&gt; K[Linelist v.2]
 I --&gt; K
 </pre>
@@ -176,10 +176,10 @@ Activez les macros avant les exercices
 <section id="exercice-1-exploration." class="level2">
 <h2 class="anchored" data-anchor-id="exercice-1-exploration.">Exercice 1 : Exploration.</h2>
 <ul>
-<li><p>Ouvrez le fichier <code>linelist_measles_en_ex1.xlsb</code>. Le mot de passe du fichier est 1234.</p></li>
+<li><p>Ouvrez le fichier <code>linelist_measles_en_ex1.xlsb</code>. Le mot de passe du fichier est 5678.</p></li>
 <li><p>Parcourez les feuilles de la linelist.</p></li>
 <li><p>Remplissez des données géographiques en utilisant le geo-Helper. Sélectionnez les données que vous voudrez.</p></li>
-<li><p>Explorez les analyses univariées, bivariées et temporelles. Recalculez les même analyses en filtrant sur les personnes agées de moins de 2 ans.</p></li>
+<li><p>Explorez les analyses univariées, bivariées et temporelles. Recalculez les même analyses en filtrant sur les personnes agées de moins de 2 ans. (Si vous ne changez pas le mot de passe, le mot de passe des exports est 605637)</p></li>
 <li><p>Exportez les données filtrées avec l’export anonyme pour MSF.</p></li>
 </ul>
 </section>
@@ -188,11 +188,11 @@ Activez les macros avant les exercices
 <ul>
 <li><p>Ouvrez le setup <code>setup_measles_base_ex2.xlsb</code>. On décide d’ajouter les variables suivantes:</p>
 <ul>
-<li>A la section <em>Admission</em>, juste avant la sous-section <em>hospitalisation</em>:
+<li>A la section <em>Admission</em> de la feuille <em>Linelist patients</em>, juste avant la sous-section <em>hospitalisation</em>:
 <ul>
-<li><code>muac</code> (MUAC) qui prend trois valeurs: “Vert (125+mm)”, “Jaune (115-124mm)”, “Rouge (&lt; 115mm)”</li>
+<li><code>muac</code> (MUAC) qui prend trois valeurs: “Green (125+mm)”, “Yellow (115-124mm)”, “Red (&lt; 115mm)”</li>
 </ul></li>
-<li>A la section <em>Vaccination</em>, juste après <em>Vacciné contre la rougeole</em>:
+<li>A la section <em>Vaccination</em> de la feuille <em>Linelist patients</em>, juste après <em>Vaccinated against measles</em>:
 <ul>
 <li><code>vacci_measles_doses</code> (Nombre de doses reçues) qui est une variable numériques.</li>
 <li>Ajoutez à cette variable une validation pour s’assurer qu’elle est comprise entre 0 et 4</li>
@@ -216,7 +216,7 @@ Note
 </div>
 <ul>
 <li><p>Regenérez une nouvelle linelist avec le designer appelée <code>linelist_measles_en_ex2</code> dans le dossier de la démo en s’assurant que vous avez sélectionné l’anglais comme langue. Vous utiliserez le fichier <code>geobase-cod-2023-03-13_20230612.xlsb</code> comme géobase.</p></li>
-<li><p>Importez les données <code>import_linelist_en.xlsb</code> dans la linelist. Regardez les données qui n’ont pas été importées et parcourez les données de la linelist générée.</p></li>
+<li><p>Importez les données <code>import_linelist_en.xlsx</code> dans la linelist. Regardez les données qui n’ont pas été importées et parcourez les données de la linelist générée.</p></li>
 </ul>
 </section>
 <section id="exercice-3-analyses" class="level2">
@@ -225,7 +225,7 @@ Note
 <ul>
 <li><p>Ouvrez le setup <code>setup_measles_base_ex3.xlsb</code>.</p></li>
 <li><p>Dans la feuille analyses, ajoutez une table univariée portant sur le nombre de patients par type de sortie. Ajoutez les pourcentages et un graphique pour cette table.</p></li>
-<li><p>Dans la feuille analyses, ajoutez une table temporelle portant sur l’évolution des type de sortie par date de notification. Ajoutez une l’option pourcentage en ligne, et n’ajoutez pas de total.</p></li>
+<li><p>Dans la feuille analyses, ajoutez une table temporelle portant sur l’évolution des type de sortie par date de notification. Ajoutez une l’option pourcentage en ligne, et ajoutez le total.</p></li>
 <li><p>Dans la feuille analyses, ajoutez un graph sur les types de sorties. Dans les spécifications du graphique, représentez le nombre de décédés par date de notification, en barre.</p></li>
 <li><p>Traduisez tous les labels en Français</p></li>
 <li><p>Faites un checking sur le setup pour s’assurer qu’il ne contient pas d’erreurs.</p></li>

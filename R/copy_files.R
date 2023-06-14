@@ -14,16 +14,23 @@ setup_folder  <- dplyr::case_when(
     TRUE ~ "~/outbreak-tools-setup"
 )
 
+# copy the designer
+# file.copy(from = glue::glue("{obt_folder}/designer.xlsb"),
+#           to = "./designer/designer.xlsb",
+#           overwrite = TRUE)
 
-file.copy(from = glue::glue("{obt_folder}/designer.xlsb"),
-          to = "./designer/designer.xlsb",
-          overwrite = TRUE)
+# # copy the ribbon template
+# file.copy(from = glue::glue("{obt_folder}/misc/_ribbontemplate.xlsb"),
+#           to = "./designer/_ribbontemplate.xlsb",
+#           overwrite = TRUE
+# )
 
-file.copy(
-    from = glue::glue("{setup_folder}/setup.xlsb"),
-    to = "./setup/empty_setup.xlsb",
-    overwrite = TRUE
-)
+# # copy the empty setup
+# file.copy(
+#     from = glue::glue("{setup_folder}/setup.xlsb"),
+#     to = "./setup/empty_setup.xlsb",
+#     overwrite = TRUE
+# )
 
 
 # add the files to a zip file for demo
@@ -39,10 +46,13 @@ utils::zip(
     "./setup/setup_measles_base_ex3.xlsb",
     "./setup/setup_measles_exercise_three.xlsb",
     "./geobase/geobase-cod-2023-03-13_20230612.xlsb",
-    "./exercise/demo_exercise_fr.html",
-    "./exercise/demo_exercise_en.html",
-    "./exercise/demo_exercise_fr.pdf",
-    "./exercise/demo_exercise_en.pdf",
-    "./designer/designer.xlsb"
+    "./exercise/fr/demo_exercise_fr.html",
+    "./exercise/en/demo_exercise_en.html",
+    "./exercise/fr/demo_exercise_fr.pdf",
+    "./exercise/en/demo_exercise_en.pdf",
+    "./exercise/fr/demo_exercise_fr.docx",
+    "./exercise/en/demo_exercise_en.docx",
+    "./designer/designer.xlsb",
+    "./designer/_ribbontemplate.xlsb"
     )
 )

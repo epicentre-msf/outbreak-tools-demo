@@ -40,16 +40,16 @@ sous Excel. Ces outils permettent entre autre d'automatiser sous excel:
 
 ```{mermaid theme="neutral"}
 
-%%| fig.width: 3
+%%|fig.width: 2
 
 flowchart TD
-A[Fichier setup] --> B[Fichier designer]
+A[setup] --> B[designer]
 G[Geobase] -->B
 B --> C[Linelist v.1]
-C --> F(Evolution vers une nouvelle version)
+C --> F(Nouvelle version)
 C --> E(Export: MSF, MoH, Données brutes.)
-E --> I(Import dans une nouvelle version)
-E --> H(Partage, centralisation)
+E --> I(Import dans la nouvelle version)
+E --> H(Partage, ..)
 F --> K[Linelist v.2]
 I --> K
 ```
@@ -90,13 +90,14 @@ Il existe [une application](https://reports.msf.net/secure/app/outbreak-tools-ge
 
 ## Exercice 1 : Exploration.
 
-- Ouvrez le fichier `linelist_measles_en_ex1.xlsb`. Le mot de passe du fichier est 1234.
+- Ouvrez le fichier `linelist_measles_en_ex1.xlsb`. Le mot de passe du fichier est 5678.
 
 - Parcourez les feuilles de la linelist.
 
 - Remplissez des données géographiques en utilisant le geo-Helper. Sélectionnez les données que vous voudrez.
 
-- Explorez les analyses univariées, bivariées et temporelles. Recalculez les même analyses en filtrant sur les personnes agées de moins de 2 ans. 
+- Explorez les analyses univariées, bivariées et temporelles. Recalculez les même analyses en filtrant sur les personnes agées de moins de 2 ans. (Si vous ne changez pas le mot de passe, le mot de passe des exports
+est 605637)
 
 - Exportez les données filtrées avec l'export anonyme pour MSF.
 
@@ -104,10 +105,10 @@ Il existe [une application](https://reports.msf.net/secure/app/outbreak-tools-ge
 
 - Ouvrez le setup `setup_measles_base_ex2.xlsb`. On décide d'ajouter les variables suivantes:
 
-  - A la section _Admission_, juste avant la sous-section _hospitalisation_:
-    - `muac` (MUAC) qui prend trois valeurs: "Vert (125+mm)", "Jaune (115-124mm)", "Rouge (< 115mm)"
+  - A la section _Admission_ de la feuille _Linelist patients_, juste avant la sous-section _hospitalisation_:
+    - `muac` (MUAC) qui prend trois valeurs: "Green (125+mm)", "Yellow (115-124mm)", "Red (< 115mm)"
 
-  - A la section _Vaccination_, juste après _Vacciné contre la rougeole_:
+  - A la section _Vaccination_ de la feuille _Linelist patients_, juste après _Vaccinated against measles_:
     - `vacci_measles_doses` (Nombre de doses reçues) qui est une variable numériques.
     - Ajoutez à cette variable une validation pour s'assurer qu'elle est comprise entre 0 et 4
 
@@ -124,7 +125,7 @@ _Vous devriez normalement obtenir un fichier de configuration identique à `setu
 `linelist_measles_en_ex2` dans le dossier de la démo en s'assurant que vous avez sélectionné l'anglais comme langue. 
 Vous utiliserez le fichier `geobase-cod-2023-03-13_20230612.xlsb` comme géobase.
 
-- Importez les données `import_linelist_en.xlsb` dans la linelist. Regardez les données qui n'ont pas été importées et parcourez les données de la linelist générée.
+- Importez les données `import_linelist_en.xlsx` dans la linelist. Regardez les données qui n'ont pas été importées et parcourez les données de la linelist générée.
 
 
 ## Exercice 3: Analyses
@@ -135,7 +136,7 @@ On décide d'ajouter dans le fichier des analyses sur les `outcome`.
 
 - Dans la feuille analyses, ajoutez une table univariée portant sur le nombre de patients par type de sortie. Ajoutez les pourcentages et un graphique pour cette table.
 
-- Dans la feuille analyses, ajoutez une table temporelle portant sur l'évolution des type de sortie par date de notification. Ajoutez une l'option pourcentage en ligne, et n'ajoutez pas de total.
+- Dans la feuille analyses, ajoutez une table temporelle portant sur l'évolution des type de sortie par date de notification. Ajoutez une l'option pourcentage en ligne, et ajoutez le total.
 
 - Dans la feuille analyses, ajoutez un graph sur les types de sorties. Dans
 les spécifications du graphique, représentez le nombre de décédés par date de notification, en barre.

@@ -97,7 +97,7 @@ to perform the exercises.
 ## Exercise 1: Exploration.
 
 - Open the file `linelist_measles_en_ex1.xlsb`. The file password is
-  1234.
+  5678.
 
 - Browse the linelist sheets.
 
@@ -107,19 +107,20 @@ to perform the exercises.
 - Explore univariate, bivariate and temporal analyses. Recompute the
   same analyses by filtering on people under 2 years of age.
 
-- Export the filtered data with the anonymous export for MSF.
+- Export the filtered data with the anonymous export for MSF. If you
+  don’t change the export password, the password is 605637.
 
 ## Exercise 2: Modifying the setup file
 
 - Open the setup file `setup_measles_base_ex2.xlsb`. We want to add the
   following variables:
 
-  - In the *Admission* section, just before the *hospitalization*
-    sub-section:
+  - In the *Admission* section of *Linelist patients* sheet, just before
+    the *hospitalisation* sub-section:
     - `muac` (MUAC) which takes three values: “Green (125+mm)”, “Yellow
       (115-124mm)”, “Red (\< 115mm)”
-  - In the *Vaccination* section, just after *Vaccination against
-    measles*:
+  - In the *Vaccination* section of *Linelist patients* sheet, just
+    after *Vaccination against measles*:
     - `vacci_measles_doses` (Number of doses received) which is a
       numeric variable.
     - Add a validation to this variable to make sure it’s between 0 and
@@ -144,7 +145,7 @@ to perform the exercises.
   selected English as the language. You’ll use the file
   `geobase-cod-2023-03-13_20230612.xlsb` as your geobase.
 
-- Import the data `import_linelist_en.xlsb` into the linelist. Look at
+- Import the data `import_linelist_en.xlsx` into the linelist. Look at
   the data that has not been imported and browse the data in the
   generated linelist.
 
@@ -159,8 +160,8 @@ We’ve decided to add some analyses to the `outcome` file.
   table.
 
 - In the analyses sheet, add a temporal table showing the evolution of
-  discharge types by notification date. Add a percentage option in row,
-  and do not add a total.
+  type of discharge by notification date. Add a percentage option in
+  row, and add a total.
 
 - In the analysis sheet, add a graph of output types. In graph
   specifications, represent the number of deaths per notification date,

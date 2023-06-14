@@ -91,7 +91,7 @@ informations géographiques sont disponibles.
 ::: {.callout-note title="Téléchargez et dézippez les matériels"}
   Vous pouvez télécharger les exercices sous format `zip` pour une utilisation 
   _offline_
-  [ici](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip). 
+  [ici](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip). 
   **Il faut extraire le fichier zip après le téléchargement.**
 
   **Assurez-vous de débloquer les fichiers téléchargés**
@@ -107,7 +107,7 @@ informations géographiques sont disponibles.
   1- Sélectionnez Propriétés
 
   2- Cochez la case _Débloquer_ en bas à droite.
-  
+
 :::
 
 ::: {.callout-important title="Activez les macros avant les exercices"}

@@ -81,7 +81,7 @@ the exercises.
 ::: {.callout-note title="Download and unzip the materials"}
 
   You can download the exercices in `zip` file for offline use 
-  [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip). 
+  [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip). 
   **Extract the zip files after the download.**
 
   **Be sure the downloaded files are not locked by windows**

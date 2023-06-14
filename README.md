@@ -9,7 +9,7 @@
 [outbreak-tools-setup](https://github.com/epicentre-msf/outbreak-tools-setup/).*
 
 [![Download all the materials of the
-demo](https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/materials.svg)](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip)
+demo](https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/materials.svg)](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip)
 [![Download Latest version of setup
 file](https://github.com/epicentre-msf/outbreak-tools/raw/main/src/imgs/setup_file.svg)](https://github.com/epicentre-msf/outbreak-tools-setup/raw/main/setup.xlsb)
 [![Download Latest development version of the
@@ -81,7 +81,7 @@ to perform the exercises.
 > **Download and unzip the materials**
 >
 > You can download the exercices in `zip` file for offline use
-> [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip).
+> [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip).
 > **Extract the zip files after the download.**
 >
 > **Be sure the downloaded files are not locked by windows**

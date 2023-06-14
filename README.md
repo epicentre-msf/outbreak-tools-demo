@@ -83,6 +83,19 @@ to perform the exercises.
 > You can download the exercices in `zip` file for offline use
 > [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip).
 > **Extract the zip files after the download.**
+>
+> **Be sure the downloaded files are not locked by windows**
+>
+> On some Windows machine, you will need to unblock downloaded files to
+> be able to use macros. In some cases, excel macro files downloaded
+> from the web are automatically blocked for security reasons. You can
+> unblock the files by:
+>
+> 0- Right click on the file
+>
+> 1- Select Properties
+>
+> 2- Check the *Unblock* box on the bottom right.
 
 </div>
 
@@ -103,17 +116,6 @@ to perform the exercises.
 >
 > <img src="macros_security_en.png" style="width:80.0%"
 > data-fig-align="center" />
->
-> On some Windows machine, you will need to unblock downloaded files to
-> be able to use macros. In some cases, excel macro files downloaded
-> from the web are automatically blocked for security reasons. You can
-> unblock the files by:
->
-> 0- Right click on the file
->
-> 1- Select Properties
->
-> 2- Check the *Unblock* box on the bottom right.
 
 </div>
 
@@ -176,7 +178,8 @@ to perform the exercises.
 
 ## Exercise 3: Analysis
 
-We’ve decided to add some analyses to the `outcome` file.
+We’ve decided to add some analyses on `outcome` (Type of discharge) to
+the linelist.
 
 - Open the setup `setup_measles_base_ex3.xlsb` in the `setup` folder.
 

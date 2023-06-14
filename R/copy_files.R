@@ -15,22 +15,22 @@ setup_folder  <- dplyr::case_when(
 )
 
 # copy the designer
-# file.copy(from = glue::glue("{obt_folder}/designer.xlsb"),
-#           to = "./designer/designer.xlsb",
-#           overwrite = TRUE)
+file.copy(from = glue::glue("{obt_folder}/designer.xlsb"),
+          to = "./designer/designer.xlsb",
+          overwrite = TRUE)
 
 # # copy the ribbon template
-# file.copy(from = glue::glue("{obt_folder}/misc/_ribbontemplate.xlsb"),
-#           to = "./designer/_ribbontemplate.xlsb",
-#           overwrite = TRUE
-# )
+file.copy(from = glue::glue("{obt_folder}/misc/_ribbontemplate.xlsb"),
+          to = "./designer/_ribbontemplate.xlsb",
+          overwrite = TRUE
+)
 
 # # copy the empty setup
-# file.copy(
-#     from = glue::glue("{setup_folder}/setup.xlsb"),
-#     to = "./setup/empty_setup.xlsb",
-#     overwrite = TRUE
-# )
+file.copy(
+    from = glue::glue("{setup_folder}/setup.xlsb"),
+    to = "./setup/empty_setup.xlsb",
+    overwrite = TRUE
+)
 
 
 # add the files to a zip file for demo

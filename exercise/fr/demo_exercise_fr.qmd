@@ -92,21 +92,9 @@ informations géographiques sont disponibles.
   Vous pouvez télécharger les exercices sous format `zip` pour une utilisation 
   _offline_
   [ici](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip). 
-  **Il faut extraire le fichier zip après le téléchargement.** 
-:::
+  **Il faut extraire le fichier zip après le téléchargement.**
 
-::: {.callout-important title="Activez les macros avant les exercices"}
-
-  Si vous comptez lancer le designer afin qu'il construise une linelist, vous 
-  aurez besoin d'autoriser les macros VBA sous excel, ainsi que l'accès au 
-  modèle object VBA:
-
-  1- Affichez l'onglet _Développeur_ sous excel.
-
-  2- Dans l'onglet _Développeur_, cliquez sur _Sécurité des macros_. 
-  Cochez les options comme présenté dans l'image suivante:
-
-  ![](macros_security_fr.png){width=80% fig-align="center"}
+  **Assurez-vous de débloquer les fichiers téléchargés**
 
   Sur certaines machines Windows, vous devrez débloquer vos fichiers pour 
   pouvoir utiliser les macros.
@@ -119,6 +107,21 @@ informations géographiques sont disponibles.
   1- Sélectionnez Propriétés
 
   2- Cochez la case _Débloquer_ en bas à droite.
+  
+:::
+
+::: {.callout-important title="Activez les macros avant les exercices"}
+
+  Si vous comptez lancer le designer afin qu'il construise une linelist, vous 
+  aurez besoin d'autoriser les macros VBA sous excel, ainsi que l'accès au 
+  modèle objet VBA:
+
+  1- Affichez l'onglet _Développeur_ sous excel.
+
+  2- Dans l'onglet _Développeur_, cliquez sur _Sécurité des macros_. 
+  Cochez les options comme présenté dans l'image suivante:
+
+  ![](macros_security_fr.png){width=80% fig-align="center"}
 
 :::
 

@@ -86,6 +86,17 @@ Il existe [une application](https://reports.msf.net/secure/app/outbreak-tools-ge
 
   ![](macros_security_fr.png){width=80% fig-align="center"}
 
+  Sur certaines machines Windows, vous devrez débloquer vos fichiers pour pouvoir utiliser les macros.
+  Dans certains cas, des fichiers de macro Excel
+  téléchargés depuis le Web sont automatiquement bloqués pour des raisons de sécurité. Vous pouvez débloquer les fichiers
+  par:
+
+  0- Clic droit sur le fichier
+  
+  1- Sélectionnez Propriétés
+
+  2- Cochez la case _Débloquer_ en bas à droite.
+
 :::
 
 ## Exercice 1 : Exploration.

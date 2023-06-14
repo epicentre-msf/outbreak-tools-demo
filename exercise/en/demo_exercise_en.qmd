@@ -74,17 +74,39 @@ There is [an application](https://reports.msf.net/secure/app/outbreak-tools-geoa
 
 # Exercises
 
-This series of 3 exercises explores the possibilities mentioned above, using a measles setup file. The folders contain all the materials needed to perform the exercises.
+This series of 3 exercises explores the possibilities mentioned above, using a
+measles setup file. The folders contain all the materials needed to perform 
+the exercises. 
+
+::: {.callout-note title = "Download and unzip the materials"}
+  You can download the exercices in `zip` file for offline use 
+  [here](). **Extract the zip files after the download.** 
+:::
+
 
 ::: {.callout-important title="Activate macros before exercises"}
 
   If you're going to run the designer to build a linelist, you'll need to enable VBA macros in Excel, as well as access to the VBA object model:
+
+  0- Open Excel
 
   1- Display the _Developer_ tab in Excel.
 
   2- In the _Developer_ tab, click on _Macro security_. Check the options as shown in the following image:
 
   ![](macros_security_en.png){width=80% fig-align="center"}
+
+
+  On some Windows machine, you will need to unblock your files to be able to use macros. 
+  In some cases, excel macro files
+  downloaded from the web are automatically blocked for security reasons. You can unblock the files 
+  by:
+
+  0- Right click on the file
+  
+  1- Select Properties
+
+  2- Check the _Unblock_ box on the bottom right. 
 
 :::
 

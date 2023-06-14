@@ -78,9 +78,12 @@ This series of 3 exercises explores the possibilities mentioned above, using a
 measles setup file. The folders contain all the materials needed to perform 
 the exercises. 
 
-::: {.callout-note title = "Download and unzip the materials"}
+::: {.callout-note title="Download and unzip the materials"}
+
   You can download the exercices in `zip` file for offline use 
-  [here](). **Extract the zip files after the download.** 
+  [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip). 
+  **Extract the zip files after the download.** 
+
 :::
 
 
@@ -97,7 +100,7 @@ the exercises.
   ![](macros_security_en.png){width=80% fig-align="center"}
 
 
-  On some Windows machine, you will need to unblock your files to be able to use macros. 
+  On some Windows machine, you will need to unblock downloaded files to be able to use macros. 
   In some cases, excel macro files
   downloaded from the web are automatically blocked for security reasons. You can unblock the files 
   by:
@@ -106,7 +109,7 @@ the exercises.
   
   1- Select Properties
 
-  2- Check the _Unblock_ box on the bottom right. 
+  2- Check the _Unblock_ box on the bottom right.
 
 :::
 
@@ -114,7 +117,8 @@ the exercises.
 
 ## Exercise 1: Exploration.
 
-- Open the file `linelist_measles_en_ex1.xlsb`. The file password is 5678.
+- Open the file `linelist_measles_en_ex1.xlsb` located in the `linelist` folder. 
+The file password is 5678.
 
 - Browse the linelist sheets.
 
@@ -122,11 +126,14 @@ the exercises.
 
 - Explore univariate, bivariate and temporal analyses. Recompute the same analyses by filtering on people under 2 years of age.
 
-- Export the filtered data with the anonymous export for MSF. If you don't change the export password, the password is 605637.
+- Export the filtered data with the anonymous export for MSF. Open and browse 
+the exported file. If you didn't change the exports password, the password should be:
+ **605637**.
 
 ## Exercise 2: Modifying the setup file
 
-- Open the setup file `setup_measles_base_ex2.xlsb`. We want to add the following variables:
+- Open the setup file `setup_measles_base_ex2.xlsb` in the `setup` folder. 
+We want to add the following variables:
 
   - In the _Admission_ section of _Linelist patients_ sheet, just before the _hospitalisation_ sub-section:
     - `muac` (MUAC) which takes three values: "Green (125+mm)", "Yellow (115-124mm)", "Red (< 115mm)"
@@ -141,21 +148,27 @@ the exercises.
 
 
 ::: {.callout-note}
-_You should normally have a configuration file identical to `setup_measles_exercise_two.xlsb`. You can also start from this file if you like._
+_You should normally have a configuration file identical to_ 
+_`setup_measles_exercise_two.xlsb` in the_
+_`setup` folder. You can also start from this file if you like._
 :::
 
-- Regenerate a new linelist with the designer named 
-`linelist_measles_en_ex2` in the demo folder, making sure you've selected English as the language. 
-You'll use the file `geobase-cod-2023-03-13_20230612.xlsb` as your geobase.
+- Regenerate a new linelist named 
+`linelist_measles_en_ex2` using the designer. Save the linelist
+in the demo folder, making sure you've selected 
+English as the language. 
+You'll use the file `geobase-cod-2023-03-13_20230612.xlsx` in the `geobase` folder
+ as your geobase.
 
-- Import the data `import_linelist_en.xlsx` into the linelist. Look at the data that has not been imported and browse the data in the generated linelist. 
+- Import the data `import_linelist_en.xlsx` located in the `data` folder into the linelist. 
+Look at the data that has not been imported and browse the data in the linelist. 
 
 
 ## Exercise 3: Analysis
 
 We've decided to add some analyses to the `outcome` file.
 
-- Open the setup `setup_measles_base_ex3.xlsb`.
+- Open the setup `setup_measles_base_ex3.xlsb` in the `setup` folder.
 
 - In the analyses sheet, add a univariate table showing the number of patients by type of discharge. Add percentages and a graph for this table.
 
@@ -164,19 +177,21 @@ We've decided to add some analyses to the `outcome` file.
 - In the analysis sheet, add a graph of output types. In
 graph specifications, represent the number of deaths per notification date, in bars.
 
-- Translate all labels into French
+- Translate all labels into French.
 
 - Check the setup for errors.
 
 ::: {.callout-note}
-_You should get a configuration file identical to `setup_measles_exercise_three.xlsb`. You can also start from this file if you like._
+_You should get a configuration file identical to `setup_measles_exercise_three.xlsb` in_
+_the `setup` folder. You can also start from this file if you like._
 :::
 
 
-- Regenerate a new linelist with the designer called 
-`linelist_measles_en_ex3` in the demo folder, making sure you've selected English as the language.
+- Regenerate a new linelist named 
+`linelist_measles_en_ex3` using the designer. Save the linelist in the demo folder,
+ making sure you've selected English as the language.
 
-- Import the data `import_linelist_en.xlsb` into the linelist. Browse the generated linelist data.
+- Import the data `import_linelist_en.xlsx` located in the `data` folder into the linelist.
+Look at the data that has not been imported and browse the data in the linelist.
 
-
-- Print the `Patient linelist` sheet.
+- Print the `Linelist patients` sheet.

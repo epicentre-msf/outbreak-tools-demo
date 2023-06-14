@@ -30,13 +30,17 @@ affiliations:
 Outbreak-tools est un ensemble d'outils pour faciliter la création de linelist
 sous Excel. Ces outils permettent entre autre d'automatiser sous excel:
 
-- L'ajout de variables (que ce soient des listes déroulantes, des valeurs entières, décimales, ou même des formules excels) ainsi que leur formatage. 
+- L'ajout de variables (que ce soient des listes déroulantes, des valeurs 
+entières, décimales, ou même des formules excels) ainsi que leur formatage. 
 - La traduction d'une linelist d'une langue à une autre,
-- L'ajout d'analyses dans la linelist sous forme de tableaux(univariées, bivariées, temporelles, spatiales),
+- L'ajout d'analyses dans la linelist sous forme de 
+tableaux (univariées, bivariées, temporelles, spatiales),
 - L'ajout de graphes dans la linelist,
-- Les imports/exports vers des formats spécifiques de toute la linelist ou de certaines variables.
+- Les imports/exports vers des formats spécifiques de toute la 
+linelist ou de certaines variables.
 - La gestion des données géographiques dans la linelist.
-- L'évolution de la linelist au fur et à mesure que l'on ajoute ou supprime des options/variables.
+- L'évolution de la linelist au fur et à mesure que l'on ajoute ou supprime 
+des options/variables.
 
 ```{mermaid theme="neutral"}
 
@@ -56,40 +60,59 @@ I --> K
 
 
 La conception de la linelist est pensée dans un fichier de configuration
-appelé _setup_. Ce fichier _setup_ est ensuite chargé dans un autre fichier qui conçoit la linelist
+appelé _setup_. Ce fichier _setup_ est ensuite chargé dans un autre fichier qui 
+conçoit la linelist
 appelé _designer_. Le designer crée la linelist, en se basant sur les configurations
 du _setup_. La procédure de création de la linelist se fait donc en 3 étapes:
 
 
 1- Définir ses besoins dans le fichier setup: 
-La configuration du fichier s'inspire de celle des formulaires XLS de Kobo. Cela ne nécessite pas a priori une connaissance approfondie de excel. Un fichier setup est défini par maladie, et peut permettre de créer des linelist dans plusieurs langues.
+La configuration du fichier s'inspire de celle des formulaires XLS de Kobo. 
+Cela ne nécessite pas a priori une connaissance approfondie de excel. 
+Un fichier setup est défini par maladie, et peut permettre de créer des linelist
+dans plusieurs langues.
 
 
 2- Télécharger les données géographiques de la zone cible:
-Il existe [une application](https://reports.msf.net/secure/app/outbreak-tools-geoapp) disponible en ligne pour télécharger les données géographiques de la région qui vous intéresse. Elle est mise à jour au fur et à mesure que de nouvelles informations géographiques sont disponibles.
+Il existe [une application](https://reports.msf.net/secure/app/outbreak-tools-geoapp) 
+disponible en ligne pour télécharger les données géographiques de la région qui 
+vous intéresse. Elle est mise à jour au fur et à mesure que de nouvelles 
+informations géographiques sont disponibles.
 
 3- Générer la linelist en précisant les options dans le designer.
 
 
-
 # Exercices
   
- La présente série de 3 exercices permet d'explorer les possibilités citées précédemment en mettant en jeu un setup pour la rougeole. Vous disposez dans les dossiers de tous les materiels pour effectuer les exercices.
+ La présente série de 3 exercices permet d'explorer les possibilités citées 
+ précédemment en mettant en jeu un setup pour la rougeole. Vous disposez dans 
+ les dossiers de tous les materiels pour effectuer les exercices.
+
+::: {.callout-note title="Téléchargez et dézippez les matériels"}
+  Vous pouvez télécharger les exercices sous format `zip` pour une utilisation 
+  _offline_
+  [ici](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip). 
+  **Il faut extraire le fichier zip après le téléchargement.** 
+:::
 
 ::: {.callout-important title="Activez les macros avant les exercices"}
 
-  Si vous comptez lancer le designer afin qu'il construise une linelist, vous aurez besoin d'autoriser les macros VBA sous excel, ainsi que l'accès au modèle object VBA:
+  Si vous comptez lancer le designer afin qu'il construise une linelist, vous 
+  aurez besoin d'autoriser les macros VBA sous excel, ainsi que l'accès au 
+  modèle object VBA:
 
   1- Affichez l'onglet _Développeur_ sous excel.
 
-  2- Dans l'onglet _Développeur_, cliquez sur _Sécurité des macros_. Cochez les options comme présenté dans l'image suivante:
+  2- Dans l'onglet _Développeur_, cliquez sur _Sécurité des macros_. 
+  Cochez les options comme présenté dans l'image suivante:
 
   ![](macros_security_fr.png){width=80% fig-align="center"}
 
-  Sur certaines machines Windows, vous devrez débloquer vos fichiers pour pouvoir utiliser les macros.
+  Sur certaines machines Windows, vous devrez débloquer vos fichiers pour 
+  pouvoir utiliser les macros.
   Dans certains cas, des fichiers de macro Excel
-  téléchargés depuis le Web sont automatiquement bloqués pour des raisons de sécurité. Vous pouvez débloquer les fichiers
-  par:
+  téléchargés depuis le Web sont automatiquement bloqués pour des raisons de 
+  sécurité. Vous pouvez débloquer les fichiers par:
 
   0- Clic droit sur le fichier
   
@@ -101,70 +124,100 @@ Il existe [une application](https://reports.msf.net/secure/app/outbreak-tools-ge
 
 ## Exercice 1 : Exploration.
 
-- Ouvrez le fichier `linelist_measles_en_ex1.xlsb`. Le mot de passe du fichier est 5678.
+- Ouvrez le fichier `linelist_measles_en_ex1.xlsb` qui se trouve dans le dossier
+`linelist`. 
+Le mot de passe du fichier est 5678.
 
 - Parcourez les feuilles de la linelist.
 
-- Remplissez des données géographiques en utilisant le geo-Helper. Sélectionnez les données que vous voudrez.
+- Remplissez des données géographiques en utilisant le geo-Helper. 
+Sélectionnez les données que vous voudrez.
 
-- Explorez les analyses univariées, bivariées et temporelles. Recalculez les même analyses en filtrant sur les personnes agées de moins de 2 ans. (Si vous ne changez pas le mot de passe, le mot de passe des exports
-est 605637)
+- Explorez les analyses univariées, bivariées et temporelles. Recalculez 
+les mêmes analyses en filtrant sur les personnes agées de moins de 2 ans.
 
-- Exportez les données filtrées avec l'export anonyme pour MSF.
+- Exportez les données filtrées avec l'export anonyme pour MSF. Ouvrez et 
+examinez les exports.
+Si vous n'avez  pas changé le mot de passe, le mot de passe des exports
+devrait être **605637**.
 
 ## Exercice 2 : Modifications du fichier setup
 
-- Ouvrez le setup `setup_measles_base_ex2.xlsb`. On décide d'ajouter les variables suivantes:
+- Ouvrez le setup `setup_measles_base_ex2.xlsb` qui se trouve dans le dossier
+`setup`. On décide d'ajouter les 
+variables suivantes:
 
-  - A la section _Admission_ de la feuille _Linelist patients_, juste avant la sous-section _hospitalisation_:
-    - `muac` (MUAC) qui prend trois valeurs: "Green (125+mm)", "Yellow (115-124mm)", "Red (< 115mm)"
+  - A la section _Admission_ de la feuille _Linelist patients_, 
+  juste avant la sous-section _hospitalisation_:
+    - `muac` (MUAC) qui prend trois valeurs: "Green (125+mm)", 
+    "Yellow (115-124mm)", "Red (< 115mm)"
 
-  - A la section _Vaccination_ de la feuille _Linelist patients_, juste après _Vaccinated against measles_:
-    - `vacci_measles_doses` (Nombre de doses reçues) qui est une variable numériques.
-    - Ajoutez à cette variable une validation pour s'assurer qu'elle est comprise entre 0 et 4
+  - A la section _Vaccination_ de la feuille _Linelist patients_, juste 
+  après _Vaccinated against measles_:
+    - `vacci_measles_doses` (Nombre de doses reçues) qui est une variable
+     numériques.
+    - Ajoutez à cette variable une validation pour s'assurer qu'elle est 
+    comprise entre 0 et 4
 
 - Traduisez les labels ajoutés en Français
 
-- Faites un Checking sur le setup pour vous assurer qu'il ne contient pas d'erreurs.
+- Faites un Checking sur le setup pour vous assurer qu'il ne contient pas 
+d'erreurs.
 
 
 ::: {.callout-note}
-_Vous devriez normalement obtenir un fichier de configuration identique à `setup_measles_exercise_two.xlsb`. Vous pouvez partir aussi de ce fichier si vous voulez._
+_Vous devriez normalement obtenir un fichier de configuration identique à_ 
+_`setup_measles_exercise_two.xlsb` qui se trouve dans le dossier `setup`._
+_Vous pouvez partir aussi de ce fichier si vous voulez._
 :::
 
--  Regenérez une nouvelle linelist avec le designer appelée 
-`linelist_measles_en_ex2` dans le dossier de la démo en s'assurant que vous avez sélectionné l'anglais comme langue. 
-Vous utiliserez le fichier `geobase-cod-2023-03-13_20230612.xlsb` comme géobase.
+-  Regenérez une nouvelle linelist appelée 
+`linelist_measles_en_ex2` en utilisant le designer.
+Enregistrez-la dans le dossier de la démo en s'assurant que vous avez
+ sélectionné l'anglais comme langue. 
+Vous utiliserez le fichier `geobase-cod-2023-03-13_20230612.xlsx` qui 
+se trouve dans le dossier `geobase` comme géobase.
 
-- Importez les données `import_linelist_en.xlsx` dans la linelist. Regardez les données qui n'ont pas été importées et parcourez les données de la linelist générée.
+- Importez les données `import_linelist_en.xlsx` (qui se trouve dans le dossier `data`)
+dans la linelist. Regardez les 
+données qui n'ont pas été importées et parcourez les données de la linelist.
 
 
 ## Exercice 3: Analyses
 
 On décide d'ajouter dans le fichier des analyses sur les `outcome`.
 
-- Ouvrez le setup `setup_measles_base_ex3.xlsb`.
+- Ouvrez le setup `setup_measles_base_ex3.xlsb` qui se trouve dans le dossier `setup`.
 
-- Dans la feuille analyses, ajoutez une table univariée portant sur le nombre de patients par type de sortie. Ajoutez les pourcentages et un graphique pour cette table.
+- Dans la feuille analyses, ajoutez une table univariée portant sur le nombre de
+patients par type de sortie. Ajoutez les pourcentages et un graphique pour 
+cette table.
 
-- Dans la feuille analyses, ajoutez une table temporelle portant sur l'évolution des type de sortie par date de notification. Ajoutez une l'option pourcentage en ligne, et ajoutez le total.
+- Dans la feuille analyses, ajoutez une table temporelle portant sur l'évolution
+ des type de sortie par date de notification. Ajoutez une l'option pourcentage en
+ ligne, et ajoutez le total.
 
 - Dans la feuille analyses, ajoutez un graph sur les types de sorties. Dans
-les spécifications du graphique, représentez le nombre de décédés par date de notification, en barre.
+les spécifications du graphique, représentez le nombre de décédés par date de 
+notification, en barre.
 
 - Traduisez tous les labels en Français
 
 - Faites un checking sur le setup pour s'assurer qu'il ne contient pas d'erreurs.
 
 ::: {.callout-note}
-_Vous devriez normalement obtenir un fichier de configuration identique à `setup_measles_exercise_three.xlsb`. Vous pouvez partir aussi de ce fichier si vous voulez._
+_Vous devriez normalement obtenir un fichier de configuration identique à_ 
+_`setup_measles_exercise_three.xlsb` qui se trouve dans le dossier `setup`._
+_Vous pouvez partir aussi de ce fichier si vous voulez._
 :::
 
 
--  Regenérez une nouvelle linelist avec le designer appelée 
-`linelist_measles_en_ex3` dans le dossier de la démo en s'assurant que vous avez sélectionné l'anglais comme langue.
+-  Regenérez une nouvelle linelist appelée 
+`linelist_measles_en_ex3` en utilisant le designer.
+Enregistrez-la dans le dossier de la démo e en s'assurant que vous avez
+ sélectionné l'anglais comme langue.
 
-- Importez les données `import_linelist_en.xlsb` dans la linelist. Parcourez les données de la linelist générée.
-
+- Importez les données `import_linelist_en.xlsx` qui se trouvent dans le dossier
+`data` dans la linelist. Parcourez les données de la linelist.
 
 - Imprimez la feuille `Linelist patients`.

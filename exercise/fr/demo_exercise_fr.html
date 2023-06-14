@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>L’ajout de variables (que ce soient des listes déroulantes, des valeurs entières, décimales, ou même des formules excels) ainsi que leur formatage.</li>
 <li>La traduction d’une linelist d’une langue à une autre,</li>
-<li>L’ajout d’analyses dans la linelist sous forme de tableaux(univariées, bivariées, temporelles, spatiales),</li>
+<li>L’ajout d’analyses dans la linelist sous forme de tableaux (univariées, bivariées, temporelles, spatiales),</li>
 <li>L’ajout de graphes dans la linelist,</li>
 <li>Les imports/exports vers des formats spécifiques de toute la linelist ou de certaines variables.</li>
 <li>La gestion des données géographiques dans la linelist.</li>
@@ -153,6 +153,19 @@ I --&gt; K
 <section id="exercices" class="level1">
 <h1>Exercices</h1>
 <p>La présente série de 3 exercices permet d’explorer les possibilités citées précédemment en mettant en jeu un setup pour la rougeole. Vous disposez dans les dossiers de tous les materiels pour effectuer les exercices.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Téléchargez et dézippez les matériels">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Téléchargez et dézippez les matériels
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Vous pouvez télécharger les exercices sous format <code>zip</code> pour une utilisation <em>offline</em> <a href="https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo-materials.zip">ici</a>. <strong>Il faut extraire le fichier zip après le téléchargement.</strong></p>
+</div>
+</div>
 <div class="callout callout-style-default callout-important callout-titled" title="Activez les macros avant les exercices">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -171,22 +184,26 @@ Activez les macros avant les exercices
 <p><img src="macros_security_fr.png" class="img-fluid figure-img" style="width:80.0%"></p>
 </figure>
 </div>
+<p>Sur certaines machines Windows, vous devrez débloquer vos fichiers pour pouvoir utiliser les macros. Dans certains cas, des fichiers de macro Excel téléchargés depuis le Web sont automatiquement bloqués pour des raisons de sécurité. Vous pouvez débloquer les fichiers par:</p>
+<p>0- Clic droit sur le fichier</p>
+<p>1- Sélectionnez Propriétés</p>
+<p>2- Cochez la case <em>Débloquer</em> en bas à droite.</p>
 </div>
 </div>
 <section id="exercice-1-exploration." class="level2">
 <h2 class="anchored" data-anchor-id="exercice-1-exploration.">Exercice 1 : Exploration.</h2>
 <ul>
-<li><p>Ouvrez le fichier <code>linelist_measles_en_ex1.xlsb</code>. Le mot de passe du fichier est 5678.</p></li>
+<li><p>Ouvrez le fichier <code>linelist_measles_en_ex1.xlsb</code> qui se trouve dans le dossier <code>linelist</code>. Le mot de passe du fichier est 5678.</p></li>
 <li><p>Parcourez les feuilles de la linelist.</p></li>
 <li><p>Remplissez des données géographiques en utilisant le geo-Helper. Sélectionnez les données que vous voudrez.</p></li>
-<li><p>Explorez les analyses univariées, bivariées et temporelles. Recalculez les même analyses en filtrant sur les personnes agées de moins de 2 ans. (Si vous ne changez pas le mot de passe, le mot de passe des exports est 605637)</p></li>
-<li><p>Exportez les données filtrées avec l’export anonyme pour MSF.</p></li>
+<li><p>Explorez les analyses univariées, bivariées et temporelles. Recalculez les mêmes analyses en filtrant sur les personnes agées de moins de 2 ans.</p></li>
+<li><p>Exportez les données filtrées avec l’export anonyme pour MSF. Ouvrez et examinez les exports. Si vous n’avez pas changé le mot de passe, le mot de passe des exports devrait être <strong>605637</strong>.</p></li>
 </ul>
 </section>
 <section id="exercice-2-modifications-du-fichier-setup" class="level2">
 <h2 class="anchored" data-anchor-id="exercice-2-modifications-du-fichier-setup">Exercice 2 : Modifications du fichier setup</h2>
 <ul>
-<li><p>Ouvrez le setup <code>setup_measles_base_ex2.xlsb</code>. On décide d’ajouter les variables suivantes:</p>
+<li><p>Ouvrez le setup <code>setup_measles_base_ex2.xlsb</code> qui se trouve dans le dossier <code>setup</code>. On décide d’ajouter les variables suivantes:</p>
 <ul>
 <li>A la section <em>Admission</em> de la feuille <em>Linelist patients</em>, juste avant la sous-section <em>hospitalisation</em>:
 <ul>
@@ -211,19 +228,19 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><em>Vous devriez normalement obtenir un fichier de configuration identique à <code>setup_measles_exercise_two.xlsb</code>. Vous pouvez partir aussi de ce fichier si vous voulez.</em></p>
+<p><em>Vous devriez normalement obtenir un fichier de configuration identique à</em> <em><code>setup_measles_exercise_two.xlsb</code> qui se trouve dans le dossier <code>setup</code>.</em> <em>Vous pouvez partir aussi de ce fichier si vous voulez.</em></p>
 </div>
 </div>
 <ul>
-<li><p>Regenérez une nouvelle linelist avec le designer appelée <code>linelist_measles_en_ex2</code> dans le dossier de la démo en s’assurant que vous avez sélectionné l’anglais comme langue. Vous utiliserez le fichier <code>geobase-cod-2023-03-13_20230612.xlsb</code> comme géobase.</p></li>
-<li><p>Importez les données <code>import_linelist_en.xlsx</code> dans la linelist. Regardez les données qui n’ont pas été importées et parcourez les données de la linelist générée.</p></li>
+<li><p>Regenérez une nouvelle linelist appelée <code>linelist_measles_en_ex2</code> en utilisant le designer. Enregistrez-la dans le dossier de la démo en s’assurant que vous avez sélectionné l’anglais comme langue. Vous utiliserez le fichier <code>geobase-cod-2023-03-13_20230612.xlsx</code> qui se trouve dans le dossier <code>geobase</code> comme géobase.</p></li>
+<li><p>Importez les données <code>import_linelist_en.xlsx</code> (qui se trouve dans le dossier <code>data</code>) dans la linelist. Regardez les données qui n’ont pas été importées et parcourez les données de la linelist.</p></li>
 </ul>
 </section>
 <section id="exercice-3-analyses" class="level2">
 <h2 class="anchored" data-anchor-id="exercice-3-analyses">Exercice 3: Analyses</h2>
 <p>On décide d’ajouter dans le fichier des analyses sur les <code>outcome</code>.</p>
 <ul>
-<li><p>Ouvrez le setup <code>setup_measles_base_ex3.xlsb</code>.</p></li>
+<li><p>Ouvrez le setup <code>setup_measles_base_ex3.xlsb</code> qui se trouve dans le dossier <code>setup</code>.</p></li>
 <li><p>Dans la feuille analyses, ajoutez une table univariée portant sur le nombre de patients par type de sortie. Ajoutez les pourcentages et un graphique pour cette table.</p></li>
 <li><p>Dans la feuille analyses, ajoutez une table temporelle portant sur l’évolution des type de sortie par date de notification. Ajoutez une l’option pourcentage en ligne, et ajoutez le total.</p></li>
 <li><p>Dans la feuille analyses, ajoutez un graph sur les types de sorties. Dans les spécifications du graphique, représentez le nombre de décédés par date de notification, en barre.</p></li>
@@ -240,12 +257,12 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><em>Vous devriez normalement obtenir un fichier de configuration identique à <code>setup_measles_exercise_three.xlsb</code>. Vous pouvez partir aussi de ce fichier si vous voulez.</em></p>
+<p><em>Vous devriez normalement obtenir un fichier de configuration identique à</em> <em><code>setup_measles_exercise_three.xlsb</code> qui se trouve dans le dossier <code>setup</code>.</em> <em>Vous pouvez partir aussi de ce fichier si vous voulez.</em></p>
 </div>
 </div>
 <ul>
-<li><p>Regenérez une nouvelle linelist avec le designer appelée <code>linelist_measles_en_ex3</code> dans le dossier de la démo en s’assurant que vous avez sélectionné l’anglais comme langue.</p></li>
-<li><p>Importez les données <code>import_linelist_en.xlsb</code> dans la linelist. Parcourez les données de la linelist générée.</p></li>
+<li><p>Regenérez une nouvelle linelist appelée <code>linelist_measles_en_ex3</code> en utilisant le designer. Enregistrez-la dans le dossier de la démo e en s’assurant que vous avez sélectionné l’anglais comme langue.</p></li>
+<li><p>Importez les données <code>import_linelist_en.xlsx</code> qui se trouvent dans le dossier <code>data</code> dans la linelist. Parcourez les données de la linelist.</p></li>
 <li><p>Imprimez la feuille <code>Linelist patients</code>.</p></li>
 </ul>
 </section>

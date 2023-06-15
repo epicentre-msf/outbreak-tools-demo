@@ -157,7 +157,7 @@ The folders contain all the materials needed to perform the exercises.
 - Finally, print a register book for the `Linelist patients` (see *Data
   Entry and Print* ribbon).
 
-## Exercise 2: Upgrade the linelist and migrate data
+## Exercise 2: Adding new variables
 
 - Open the setup file `setup_measles_base_ex2.xlsb` in the `setup`
   folder. This setup file corresponds to the linelist you’ve been
@@ -224,7 +224,7 @@ The folders contain all the materials needed to perform the exercises.
     Options* \> *Import data*). Look at the importation report and
     browse the data in the new linelist.
 
-## Exercise 3: Analysis
+## Exercise 3: Adding new analyses
 
 We’ve decided to add some analyses on the type of discharge (variable
 `outcome`) to the linelist.

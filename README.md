@@ -22,19 +22,39 @@ linelist](https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/dev_d
 
 ## Introduction
 
-Outbreak-tools is a set of tools to facilitate the creation of linelists
-in Excel. Among other things, these tools allow you to automate:
+Outbreak-tools is a set of tools to facilitate the creation and maintainance of Excel linelists. 
+In particular, you can easily:
 
-- Adding variables (whether drop-down lists, integer or decimal values,
-  or even Excel formulas) and format them.
-- Translating a linelist from one language to another,
-- Adding analyses to the linelist in tabular form (univariate,
-  bivariate, temporal, spatial),
-- Adding graphs to the linelist,
-- Import/export the entire linelist or selected variables into specific
-  formats.
-- Managing geographic data in the linelist.
-- Migration of the linelist as options/variables are added or removed.
+- Define different types of variables (dropdown lists, Excel formulas) their format and data validation rules.
+- Print a register book that perfectly match your linelist.
+- Translate your linelist into several languages.
+- Use pre-defined geo databases for patient origin.
+- Display custom analyses (univariate,
+  bivariate, temporal, spatial) as tables and graphs.  
+- Export the entire data or selected variables/lines.
+- Migrate the data to an updated version of the linelist.
+
+The linelist is defined in a configuration file called *setup*. This
+*setup* file is then loaded into another file that designs the linelist (the *designer*). 
+The designer creates the linelist, based on the
+configurations of the *setup*. 
+
+There are 3 steps to creating a linelist:
+
+1- Open the setup file and define your needs. The configuration of the file is
+inspired from Kobo’s XLS forms. No in-depth knowledge of Excel is
+required. A setup file can be used to create
+linelists in several languages.
+
+2- Download geographic data for the targeted area: There is [a Geo-App](https://reports.msf.net/secure/app/outbreak-tools-geoapp)
+available online to download the geobase for the region of interest (new users must register).
+The Geo-App is updated as new geographical information becomes available.
+
+3- Open the designer, load the setup and geobase files, set the options (languages etc) and generate your linelist.
+
+# Use-case
+
+In this demo, you'll familiarise yourself with the various features of the tool and simulate a scenario well known to epidemiologists in the field: upgrading a linelist that already contains data to a new version. This often happens when you want to collect new variables as the epidemic unfold and you need to answer new questions.
 
 ``` mermaid
 
@@ -52,29 +72,7 @@ F --> K[Linelist v.2]
 I --> K
 ```
 
-The linelist is designed in a configuration file called *setup*. This
-*setup* file is then loaded into another file that designs the linelist
-called *designer*. The designer creates the linelist, based on the
-configurations of the *setup*. The linelist creation procedure is a
-3-step process:
-
-1- Define your needs in the setup file: The configuration of the file is
-inspired from Kobo’s XLS forms. No in-depth knowledge of Excel is
-required. A setup file is defined by disease, and can be used to create
-linelists in several languages.
-
-2- Download geographic data for the targeted area: There is [an
-application](https://reports.msf.net/secure/app/outbreak-tools-geoapp)
-available online to download geographic data for the region of interest.
-It is updated as new geographical information becomes available.
-
-3- Generate the linelist by specifying the options in the designer.
-
-# Exercises
-
-This series of 3 exercises explores the possibilities mentioned above,
-using a measles setup file. The folders contain all the materials needed
-to perform the exercises.
+The folders contain all the materials needed to perform the exercises.
 
 <div>
 
@@ -119,42 +117,50 @@ to perform the exercises.
 
 </div>
 
-## Exercise 1: Exploration.
+## Exercise 1: Getting started.
 
-- Open the file `linelist_measles_en_ex1.xlsb` located in the `linelist`
-  folder. The file password is 5678.
+- Open the linelist `linelist_measles_en_ex1.xlsb` located in the `linelist`
+  folder. The file password is 5678. It contains a mock measles dataset.
 
-- Browse the linelist sheets.
+- Take a quick look at the different sheets to get an overview.
 
-- Fill in geographical data using the geo-Helper. Select the data you
-  want.
+- In the *Linelist patients* sheet, add one or two patients manually. In particular, use the geo-Helper to enter the patient's origin (see *Data Entry and Print* ribbon).
 
-- Explore univariate, bivariate and temporal analyses. Recompute the
-  same analyses by filtering on people under 2 years of age.
+- Explore univariate, bivariate, temporal and spatial analyses. Use button in *Analyses Sheets* ribbon to recalculate the analyses.
+  - In the temporal analysis, change the start/end dates as well as the time unit of the analysis.
+  - In the spatial analysis, change the administrative level and divide by the population size to get attack rates (note we don't have population estimates below the health-zone level).
 
-- Export the filtered data with the anonymous export for MSF. Open and
-  browse the exported file. If you didn’t change the exports password,
-  the password should be: **605637**.
+- Go back to the *Linelist patients* and use the filters to show only patients under 2 years of age.
+Then go back to the analyses sheets and recalculate (use button in *Analyses Sheets* ribbon).
 
-## Exercise 2: Modifying the setup file
+- Export the filtered data using the `anonymous export for MSF` (see *Export button* in *Admin* ribbon). 
+Open and browse the exported file. If you didn’t change the password,
+  it should be: **605637**.
+
+- Finally, print a register book for the `Linelist patients` (see *Data Entry and Print* ribbon).
+
+## Exercise 2: Upgrade the linelist and migrate data
 
 - Open the setup file `setup_measles_base_ex2.xlsb` in the `setup`
-  folder. We want to add the following variables:
+  folder. This setup file corresponds to the linelist you've been working with.
+  Take a look at the different sheets and see how they relate to the linelist.
+
+- Now, we would like to add the following variables:
 
   - In the *Admission* section of *Linelist patients* sheet, just before
     the *hospitalisation* sub-section:
-    - `muac` (MUAC) which takes three values: “Green (125+mm)”, “Yellow
+    - A variable called `muac` (MUAC) that can take three values: “Green (125+mm)”, “Yellow
       (115-124mm)”, “Red (\< 115mm)”
   - In the *Vaccination* section of *Linelist patients* sheet, just
     after *Vaccination against measles*:
-    - `vacci_measles_doses` (Number of doses received) which is a
+    - A variable called `vacci_measles_doses` (Number of doses received) which is a
       numeric variable.
-    - Add a validation to this variable to make sure it’s between 0 and
+    - Create a data validation rule to ensure that this variable remains between 0 and
       4.
 
-- Translate the added labels into French
+- Translate newly added labels into French (see *Setup Options* ribbon).
 
-- Check the setup for errors.
+- Check the setup for potential errors (see *Setup Options* ribbon).
 
 <div>
 
@@ -167,37 +173,38 @@ to perform the exercises.
 </div>
 
 - Regenerate a new linelist named `linelist_measles_en_ex2` using the
-  designer. Save the linelist in the demo folder, making sure you’ve
+  designer located in the `designer` folder. Save the linelist in the demo folder, making sure you’ve
   selected English as the language. You’ll use the file
   `geobase-cod-2023-03-13_20230612.xlsx` in the `geobase` folder as your
   geobase.
 
-- Import the data `import_linelist_en.xlsx` located in the `data` folder
-  into the linelist. Look at the data that has not been imported and
-  browse the data in the linelist.
+
+
+- You are now ready to migrate your data from the old to the new linelist. You need to proceed in 2 steps:
+  - First, go back to the linelist `linelist_measles_en_ex1.xlsb` and remove all filters (see *Data Entry and Print* ribbon). Then, export the data (see *Admin* ribbon > *Advance Options* > *Export data*) to a location of your choice. This migration file contains all your data.
+  - Second, go back to the new linelist `linelist_measles_en_ex2.xlsb` and import the migration file (see *Admin* ribbon > *Advance Options* > *Import data*).
+Look at the importation report and browse the data in the new linelist.
 
 ## Exercise 3: Analysis
 
-We’ve decided to add some analyses on `outcome` (Type of discharge) to
+We’ve decided to add some analyses on the type of discharge (variable `outcome`) to
 the linelist.
 
-- Open the setup `setup_measles_base_ex3.xlsb` in the `setup` folder.
+- Open the setup file `setup_measles_base_ex3.xlsb` located in the `setup` folder.
 
-- In the analyses sheet, add a univariate table showing the number of
+- In the *Analysis* sheet, section *Univariate Analysis* add a univariate table showing the number of
   patients by type of discharge. Add percentages and a graph for this
   table.
 
-- In the analyses sheet, add a temporal table showing the evolution of
-  type of discharge by notification date. Add a percentage option in
-  row, and add a total.
+- In the *Analysis* sheet, section *Time Series Analysis* add a temporal table showing the number of patient by type of discharge and notification date. Add percentages by
+  row and add total.
 
-- In the analysis sheet, add a graph of output types. In graph
-  specifications, represent the number of deaths per notification date,
-  in bars.
+- In the *Analysis* sheet, section *Labels for Time Series Graphs*  add a graph title *Deaths*. In the section *Graph on Time Series* graph
+  specifications, add the number of deaths per notification date, in bars.
 
-- Translate all labels into French.
+- Translate newly added labels into French (see *Setup Options* ribbon).
 
-- Check the setup for errors.
+- Check the setup for potential errors (see *Setup Options* ribbon).
 
 <div>
 
@@ -210,11 +217,12 @@ the linelist.
 </div>
 
 - Regenerate a new linelist named `linelist_measles_en_ex3` using the
-  designer. Save the linelist in the demo folder, making sure you’ve
-  selected English as the language.
+  designer located in the `designer` folder. Save the linelist in the demo folder, making sure you’ve
+  selected English as the language. You’ll use the file
+  `geobase-cod-2023-03-13_20230612.xlsx` in the `geobase` folder as your
+  geobase.
 
-- Import the data `import_linelist_en.xlsx` located in the `data` folder
-  into the linelist. Look at the data that has not been imported and
-  browse the data in the linelist.
-
-- Print the `Linelist patients` sheet.
+- You are now ready to migrate your data from the old to the new linelist. You need to proceed in 2 steps:
+  - First, go back to the linelist `linelist_measles_en_ex1.xlsb` and remove all filters (see *Data Entry and Print* ribbon). Then, export the data (see *Admin* ribbon > *Advance Options* > *Export data*) to a location of your choice. This migration file contains all your data.
+  - Second, go back to the new linelist `linelist_measles_en_ex3.xlsb` and import the migration file (see *Admin* ribbon > *Advance Options* > *Import data*).
+Look at the importation report and browse the data in the new linelist.

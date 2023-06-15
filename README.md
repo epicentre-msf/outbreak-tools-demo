@@ -224,7 +224,7 @@ The folders contain all the materials needed to perform the exercises.
     Options* \> *Import data*). Look at the importation report and
     browse the data in the new linelist.
 
-## Exercise 3: Adding new analyses
+## Exercise 3: Adding new Analysis
 
 We’ve decided to add some analyses on the type of discharge (variable
 `outcome`) to the linelist.

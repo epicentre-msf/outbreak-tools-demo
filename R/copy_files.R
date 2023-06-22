@@ -3,6 +3,7 @@
 user_name  <- Sys.info()[["user"]]
 
 # Please pay attention to which branch you are copying from.
+# SHOULD BE ON DEV BRANCH
 
 obt_folder  <- dplyr::case_when(
     user_name == "Y-AMEVOIN" ~ "D:/Projects/outbreak-tools",

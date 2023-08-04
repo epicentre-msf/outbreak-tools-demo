@@ -69,15 +69,15 @@ epidemic unfold and you need to answer new questions.
 %%|fig.width: 2
 
 flowchart TD
-A[Setup File] --> B[Designer File]
-G[Geobase] -->B
-B --> C[Linelist v.1]
-C --> F(Upgrading to a new version)
-C --> E(Export: MSF, MoH, Raw data.)
-E --> I(Import in new version)
-E --> H(Share, centralise)
-F --> K[Linelist v.2]
-I --> K
+A[Setup File] --&gt; B[Designer File]
+G[Geobase] --&gt;B
+B --&gt; C[Linelist v.1]
+C --&gt; F(Upgrading to a new version)
+C --&gt; E(Export: MSF, MoH, Raw data.)
+E --&gt; I(Import in new version)
+E --&gt; H(Share, centralise)
+F --&gt; K[Linelist v.2]
+I --&gt; K
 ```
 
 The folders contain all the materials needed to perform the exercises.

@@ -1,7 +1,5 @@
 # Show case of outbreak-tools usage
 
-<script  src="readme_files/libs/quarto-diagram/mermaid-postprocess-shim.js"></script>
-
 <div align="center">
 
 <p align="center">
@@ -66,7 +64,7 @@ field: upgrading a linelist that already contains data to a new version.
 This often happens when you want to collect new variables as the
 epidemic unfold and you need to answer new questions.
 
-<img src="readme_files/figure-commonmark/mermaid-figure-2.svg"
+<img src="readme_files/figure-commonmark/mermaid-figure-1.png"
 style="width:6.6in;height:4.9in" />
 
 The folders contain all the materials needed to perform the exercises.

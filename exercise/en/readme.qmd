@@ -4,7 +4,7 @@ subtitle: ""
 lang: en
 format: 
     gfm:
-      mermaid-format: svg
+      mermaid-format: png
 authors:
     - name: Anton Camacho
       affiliations:

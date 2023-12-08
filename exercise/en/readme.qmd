@@ -3,7 +3,8 @@ title: ""
 subtitle: ""
 lang: en
 format: 
-    gfm: default
+    gfm:
+      mermaid-format: svg
 authors:
     - name: Anton Camacho
       affiliations:

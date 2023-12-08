@@ -8,6 +8,7 @@ format:
       toc: true
       standalone: true
       embed-resources: true
+      mermaid-format: png
     pdf: default
     docx: default
 authors:
@@ -69,7 +70,7 @@ In this demo, you'll familiarise yourself with the various features of the tool 
 
 flowchart TD
 A[Setup File] --> B[Designer File]
-G[Geobase] -->B
+G[Geobase] --> B
 B --> C[Linelist v.1]
 C --> F(Upgrading to a new version)
 C --> E(Export: MSF, MoH, Raw data.)

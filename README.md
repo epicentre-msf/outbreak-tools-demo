@@ -1,5 +1,7 @@
 # Show case of outbreak-tools usage
 
+<script  src="readme_files/libs/quarto-diagram/mermaid-postprocess-shim.js"></script>
+
 <div align="center">
 
 <p align="center">
@@ -64,21 +66,8 @@ field: upgrading a linelist that already contains data to a new version.
 This often happens when you want to collect new variables as the
 epidemic unfold and you need to answer new questions.
 
-``` mermaid
-
-%%|fig.width: 2
-
-flowchart TD
-A[Setup File] --&gt; B[Designer File]
-G[Geobase] --&gt;B
-B --&gt; C[Linelist v.1]
-C --&gt; F(Upgrading to a new version)
-C --&gt; E(Export: MSF, MoH, Raw data.)
-E --&gt; I(Import in new version)
-E --&gt; H(Share, centralise)
-F --&gt; K[Linelist v.2]
-I --&gt; K
-```
+<img src="readme_files/figure-commonmark/mermaid-figure-2.svg"
+style="width:6.6in;height:4.9in" />
 
 The folders contain all the materials needed to perform the exercises.
 

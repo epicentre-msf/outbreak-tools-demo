@@ -1,0 +1,124 @@
+---
+title: "Utilisation d'une linelist de Outbreak Tools"
+subtitle: ""
+lang: fr
+format: 
+    html: 
+      theme: default
+      toc: true
+      standalone: true
+    pdf: default
+    docx: default
+authors:
+    - name: Yves Amevoin
+      affiliations:
+        - ref: epicentre
+    - name: Mathilde Mousset
+      affiliations:
+        - ref: epicentre
+affiliations:
+    - id: epicentre
+      name: Epicentre Research Center
+      url: https://epicentre.msf.org/
+---
+
+# Introduction
+
+Outbreak-tools est un ensemble d'outils destinés à faciliter la création et 
+la maintenance de linelist Excel. En particulier, vous pouvez facilement:
+
+- Définir différents types de variables (listes déroulantes, formules Excel), 
+leur format et les règles de validation des données.
+- Imprimer un registre qui correspond parfaitement à votre linelist.
+- Traduire votre liste en plusieurs langues.
+- Utiliser des bases de données géographiques prédéfinies pour l'origine des patients.
+- Afficher des analyses personnalisées (univariées, bivariées, temporelles, spatiales) sous forme de tableaux et de graphiques.  
+- Exporter l'ensemble des données ou des variables/lignes sélectionnées.
+- Migrer les données vers une version mise à jour de la liste des lignes.
+
+La linelist est définie dans un fichier de configuration appelé *setup*. 
+Ce fichier *setup* est ensuite chargé dans un autre fichier qui conçoit 
+linelist appelé  *designer*. 
+Le *designer* crée la linelist en se basant sur les configurations du *setup*.
+
+L'objectif de cet exercice est d'explorer les fonctionalités et l'utilisation de d'une linelist rougeole
+qui contient des données fictives.
+
+
+::: {.callout-important title="Présentation des fonctionalités"}
+
+  Les fonctionalités sont décrites dans un guide utilisateur transmis avec cet exercice. 
+  Vous pouvez 
+  le parcourir plus tard pour avoir une idée de toutes les fonctionalités disponibles. 
+  Nous n'allons parcourir que quelques-uns dans la linelist présentés à partir des deux schémas suivants:
+
+:::
+
+## Exercice: Utilisation des fonctionalités de la linelist
+
+Vous disposez d'une linelist nommée `linelist_measles_usage_fr.xlsb`, et d'une feuille excel 
+contenant des données appelée `import_linelist_fr.xlsb`.
+Nous allons explorer la linelist après avoir importé les données de la feuille, et
+répondre à certaines questions.
+
+
+1- Découvrir la feuille d'entrée de saisie de données, importer des données
+
+
+Ouvrir la feuille `linelist_measles_usage_fr.xlsb`. Dans l'onglet `OutbreakTools` dans la section
+
+
+
+
+2- Saisir des données
+
+
+
+
+
+3- Parcourir les analyses
+
+
+
+
+
+4- Exporter les données
+
+
+
+- Ouvrez la linelist `linelist_measles_usage_fr.xlsb`.
+- Dans l'onget Importez les données `import_linelist_fr.xlsb` dans la feuille
+
+- Les données ne sont pas triées par ordre des patients (Patient ID). Cliquez sur la Colonne  Dans l'Onglet "OutbreakTools" dans la 
+section 
+
+- Jetez un coup d'œil rapide aux différentes feuilles pour avoir une vue d'ensemble.
+
+- Dans la feuille *Linelist patients*, ajoutez un ou deux patients manuellement.
+ En particulier, utilisez l'assistant géographique pour saisir l'origine du 
+ patient (voir le ruban *Data Entry and Print*).
+
+- Explorez les analyses univariées, bivariées, temporelles et spatiales. 
+Utilisez le bouton du ruban *Analyses Sheets* pour recalculer les analyses.
+
+- Dans l'analyse temporelle, modifiez les dates de début et de fin ainsi que 
+l'unité de temps de l'analyse.
+
+- Dans l'analyse spatiale, modifiez le niveau administratif et divisez par la 
+taille de la population pour obtenir les taux d'attaque (notez que nous ne 
+disposons pas d'estimations de la population en dessous du niveau de la zone
+ de santé).
+
+- Revenez aux *Linelist patients* et utilisez les filtres pour
+ n'afficher que les patients âgés de moins de 2 ans.
+Retournez ensuite aux feuilles d'analyse et recalculez (utilisez le bouton dans
+ le ruban *Analyses Sheets*).
+
+- Exportez les données filtrées en utilisant l'exportation anonyme pour MSF 
+(voir *Export button* dans le ruban *Admin*). 
+Ouvrez et parcourez le fichier exporté. Si vous n'avez pas changé le mot de passe,
+il devrait être : **605637**.
+
+- Enfin, imprimez un registre pour les patients de la liste des patients 
+(voir le ruban *Data Entry and Print*).
+

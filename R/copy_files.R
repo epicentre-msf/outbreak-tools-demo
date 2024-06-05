@@ -23,7 +23,7 @@ file.copy(from = glue::glue("{obt_folder}/designer.xlsb"),
           overwrite = TRUE)
 
 # # copy the ribbon template
-file.copy(from = glue::glue("{obt_folder}/misc/_ribbontemplate.xlsb"),
+file.copy(from = glue::glue("{obt_folder}/misc/_ribbontemplate_main.xlsb"),
           to = "./designer/_ribbontemplate.xlsb",
           overwrite = TRUE
 )
@@ -58,5 +58,21 @@ utils::zip(
     "./exercise/en/demo_exercise_en.docx",
     "./designer/designer.xlsb",
     "./designer/_ribbontemplate.xlsb"
-    )
+   )
+)
+
+# add the files to a zip file for demo
+utils::zip(
+    zipfile = "demo_usage_materials.zip",
+    files = c(
+    "./linelist/en/linelist_measles_usage_en.xlsb",
+    "./linelist/fr/linelist_measles_usage_fr.xlsb",
+    "./exercise/en/demo_usage_en.html",
+    "./exercise/en/demo_usage_en.pdf",
+    "./exercise/fr/demo_usage_fr.html",
+    "./exercise/fr/demo_usage_fr.pdf",
+    "./guides/en/guide_obt_usage_en.pdf",
+    "./guides/en/guide_obt_usage_fr.pdf"
+    ),
+   flags = "-j"
 )

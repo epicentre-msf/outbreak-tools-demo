@@ -41,7 +41,7 @@ Ce fichier *setup* est ensuite chargé dans un autre fichier qui conçoit
 linelist appelé  *designer*. 
 Le *designer* crée la linelist en se basant sur les configurations du *setup*.
 
-L'objectif de cet exercice est d'explorer les fonctionalités et l'utilisation de d'une linelist rougeole
+L'objectif de cet exercice est d'explorer les fonctionalités et l'utilisation d'une linelist rougeole
 qui contient des données fictives.
 
 
@@ -54,6 +54,17 @@ qui contient des données fictives.
 
 :::
 
+::: {#fig-fonctionalites layout-nrow=2}
+
+  ![Pour débuter](./imgs/getting-started_fr.png){#fig-start}
+
+  ![Fonctionalités](./imgs/features_fr.png){#fig-feature}
+
+  Fonctionalités de la linelist
+:::
+
+
+
 ## Exercice: Utilisation des fonctionalités de la linelist
 
 Vous disposez d'une linelist nommée `linelist_measles_usage_fr.xlsb`, et d'une feuille excel 
@@ -62,63 +73,188 @@ Nous allons explorer la linelist après avoir importé les données de la feuill
 répondre à certaines questions.
 
 
-1- Découvrir la feuille d'entrée de saisie de données, importer des données
-
-
-Ouvrir la feuille `linelist_measles_usage_fr.xlsb`. Dans l'onglet `OutbreakTools` dans la section
+#### 1- Importer des données, découvrir la feuille de saisie de données. 
 
 
 
 
-2- Saisir des données
+*Importer des données*
+
+Ouvrir la feuille `linelist_measles_usage_fr.xlsb`. 
+
+Dans l'onglet `OutbreakTools`, dans la section `Imports`, cliquez
+sur le bouton `Importer des données`. Naviguez et sélectionnez le fichier `import_linelist_fr.xlsb` puis validez.
+
+A la fin de l'import, on vous demandera si vous voulez voir un rapport. Sélectionnez "Oui".
+Quelles sont les variables qui ne sont pas disponibles dans les données importées?
+
+*Trier des données*
+
+Triez les données  de la colonne `Numéro d'identification`. 
+
+Pour cela,
+Cliquez sur la cellule `$A$9`. 
+
+Dans l'onglet `OutbreakTools`,
+ cliquez sur le bouton `Trier la variable`.
+
+Que remarquez-vous?
+
+Triez maintenant les données sur la colonne `Numéro d'identification calculé`.
+
+*Afficher/Cacher des variables*
+
+Dans l'onglet `OutbreakTools`, cliquez sur
+`Afficher/Masquer les variables`.
+Cachez les trois premières variables personalisées.
+
+#### 2- Saisir des données
+
+Vous diposez des données pour les deux patients suivants:
 
 
 
+```
+  Patient 1:
+
+  Date de notification: 2023-10-22
+  Nom et prénom: John Doe
+  Sexe: Masculin
+  Age: 3 ans
+  Origine: Lualabala, Kapanga, Kanampumb, Kasankara
+  Date d'apparition des symptomes: 2023-10-18
+  Date d'hospitalisation: 2023-10-25
+  Vacciné contre la rougeole: non
+  Date de sortie: 2023-11-01 (Décédé)
+
+  Patient 2:
+
+  Numéro Identifiant: 44
+  Date de notification: 2023-11-05
+  Nom: Jane Doe
+  Sexe: Féminin
+  Age: 7 mois
+  Origine: Lualabala, Kapanga, Mulambu, Mulambu
+  Date d'apparition des symptomes: 2023-11-04
+  Date d'hospitalisation: 2023-11-10
+  Statut vaccinal inconnu
+  Date de sortie: 2023-11-12 (Guéri)
+```
+
+Saisissez ces données.
+
+#### 3- Parcourir les analyses
+
+Cliquez sur la feuille `Analyses Uni et bi-variées`.
+
+*Apperçu Global, analyses univariées*
+
+Dans l'onglet `OutbreakTools`, cliquez sur `Actualiser les analyses`.
+Combien de patients avez-vous dans la base de données?
+Quelle est la létalité?
+Quelle est la proportion des enfants de moins de 5 ans?
 
 
-3- Parcourir les analyses
+*Analyses sur des données filtrées*
+
+Cliquez sur la feuille `Linelist patients` et filtrez la 
+colonne `Tranche d'âge` pour ne garder que les enfants de moins de 5 ans.
+
+Cliquez sur la feuille `Analyses Uni et bi-variées` puis cliquez sur
+`Actualiser les analyses` dans l'onglet `OutbreakTools`.
+
+Vous disposez maintenant des analyses que sur les données que vous avez filtrez.
+Quelle est la létalité des enfants de moins de 5 ans?
+
+*Analyses bivariées*
+
+Cliquez sur la feuille `Linelist patients`.
+
+Dans l'onglet `OutbreakTools`, dans la section `Tableau de données`,
+cliquez sur `Supprimer tous les filtres`.
+
+Cliquez sur la feuille `Analyses uni et bi-variées`.
+
+Grâce au bouton `Aller à la section` à l'onglet `$C$2`, sélectionnez
+la section `Caractéristiques de l'âge des patients`.
+
+Parmi les patients non vaccinés, quel est le groupe d'âge le plus
+représenté?
+
+Y a t-il des patients adultes (de plus de 15 ans) décédés?
+
+Quand ces patients sont-ils décédés?
+
+*Analyses temporelles*
+
+Cliquez sur la feuille `Analyses temporelles`, et actualisez les analyses
+comme précédemment.
+
+Dans la cellule `$G$11$`, choisissez comme unité temporelle le mois.
+
+Dans la cellule `$E$11`, mettez comme date de début 2019-01-01
+
+Au cours de l'année 2019, dans quel mois a-t-on eu le plus de cas?
+
+Au cours de ce mois de l'année 2019, dans quelle semaine épidémiologique as-ton eu plus de cas?
+
+En général au cours de l'épidémie, dans quelle semaine épidémiologique
+as-ton eu le plus de cas?
+
+Au cours de cette semaine, quelle est la létalité?
+
+*Vous pourrez utiliser les filtres dans la feuille `Linelist patients` pour répondre à ces question*
+
+Quelle est la létalité des moins de 5 ans au cours de la semaine épidémiologique où l'on a eu le plus de cas? 
+
+Dans quelle semaine épidémiologique as-ton enregistré le plus de décès?
 
 
+*Analyses spatiales*
+
+Cliquez sur la feuille `Analyses spatiales` et actualisez les analyses
+comme précédement.
+
+Dans la cellule `$C$14$`, Sélectionnez l'option `Aire de Santé`.
+
+Combien de patients n'ont pas d'information sur leur origine?
+
+Quelle est l'aire de santé la plus touchée? Nous garderons son nom pour l'utiliser plus tard.
+
+D'où vient la plupart des patients qui décèdent?
 
 
+*Analyses spatio-temporelles*
 
-4- Exporter les données
+Vous vous rappelez qu'il a fallu garder en tête l'aire de santé la plus touchée.
+
+Cliquez sur la feuille `Analyses spatio-temporelles`.
+
+Dans la cellule `$C$14`, cliquez deux fois. Une boîte pour choisir 
+des localités s'affiche.
+
+Sélectionnez l'aire de santé la plus touchée. Vous pouvez vous arrêter au
+niveau 3 puis cliquez sur OK.
+
+Actualisez ensuite les analyses comme précédement.
+
+Au cours de l'épidémie, cette aire de santé a connu le plus de cas quelle semaine?
+
+Vous pouvez choisir jusqu'à 10 aires de santé et les visualiser sur un
+graphe si vous le voulez.
 
 
+#### 4- Exporter les données
 
-- Ouvrez la linelist `linelist_measles_usage_fr.xlsb`.
-- Dans l'onget Importez les données `import_linelist_fr.xlsb` dans la feuille
+Dans l'onglet `OutbreakTools`, cliquez sur
+`Exporter les données`.
 
-- Les données ne sont pas triées par ordre des patients (Patient ID). Cliquez sur la Colonne  Dans l'Onglet "OutbreakTools" dans la 
-section 
+Cliquez sur `Exportation anonyme pour le MoH`. Choisissez où vous
+vouler enregistrer l'export.
 
-- Jetez un coup d'œil rapide aux différentes feuilles pour avoir une vue d'ensemble.
+Faites de mêmes et faites une `Exportation anonyme pour MSF`. C'est 
+cette exportation qui est envoyée au dashboard. Il ne faut pas la renommer. Vous pouvez l'ouvrir pour explorer les données et regarder
+les différences entre les deux exports. Le mot de passe est 1234.
 
-- Dans la feuille *Linelist patients*, ajoutez un ou deux patients manuellement.
- En particulier, utilisez l'assistant géographique pour saisir l'origine du 
- patient (voir le ruban *Data Entry and Print*).
 
-- Explorez les analyses univariées, bivariées, temporelles et spatiales. 
-Utilisez le bouton du ruban *Analyses Sheets* pour recalculer les analyses.
-
-- Dans l'analyse temporelle, modifiez les dates de début et de fin ainsi que 
-l'unité de temps de l'analyse.
-
-- Dans l'analyse spatiale, modifiez le niveau administratif et divisez par la 
-taille de la population pour obtenir les taux d'attaque (notez que nous ne 
-disposons pas d'estimations de la population en dessous du niveau de la zone
- de santé).
-
-- Revenez aux *Linelist patients* et utilisez les filtres pour
- n'afficher que les patients âgés de moins de 2 ans.
-Retournez ensuite aux feuilles d'analyse et recalculez (utilisez le bouton dans
- le ruban *Analyses Sheets*).
-
-- Exportez les données filtrées en utilisant l'exportation anonyme pour MSF 
-(voir *Export button* dans le ruban *Admin*). 
-Ouvrez et parcourez le fichier exporté. Si vous n'avez pas changé le mot de passe,
-il devrait être : **605637**.
-
-- Enfin, imprimez un registre pour les patients de la liste des patients 
-(voir le ruban *Data Entry and Print*).
 

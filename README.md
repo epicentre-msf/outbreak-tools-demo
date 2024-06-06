@@ -1,4 +1,5 @@
 # Show case of outbreak-tools usage
+Anton Camacho, Yves Amevoin, Marine Durthaler
 
 <div align="center">
 
@@ -16,6 +17,11 @@ file](https://github.com/epicentre-msf/outbreak-tools/raw/main/src/imgs/setup_fi
 designer](https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/ribbon_template.svg)](https://github.com/epicentre-msf/outbreak-tools/raw/dev/misc/_ribbontemplate.xlsb)
 [![Download ribbon template of
 linelist](https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/imgs/dev_designer.svg)](https://github.com/epicentre-msf/outbreak-tools/raw/dev/src/bin/designer_dev.xlsb)
+
+*If you just want to focus on linelist usage, you can download*
+*materials for a short tutorial* [**available
+here**](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials_usage.zip)
+
 </p>
 
 </div>
@@ -69,9 +75,9 @@ style="width:6.6in;height:4.9in" />
 
 The folders contain all the materials needed to perform the exercises.
 
-<div>
-
-> **Download and unzip the materials**
+> [!NOTE]
+>
+> ### Download and unzip the materials
 >
 > You can download the exercices in `zip` file for offline use
 > [here](https://github.com/epicentre-msf/outbreak-tools-demo/raw/main/demo_materials.zip).
@@ -90,11 +96,9 @@ The folders contain all the materials needed to perform the exercises.
 >
 > 2- Check the *Unblock* box on the bottom right.
 
-</div>
-
-<div>
-
-> **Activate macros before exercises**
+> [!IMPORTANT]
+>
+> ### Activate macros before exercises
 >
 > If you’re going to run the designer to build a linelist, you’ll need
 > to enable VBA macros in Excel, as well as access to the VBA object
@@ -109,8 +113,6 @@ The folders contain all the materials needed to perform the exercises.
 >
 > <img src="macros_security_en.png" style="width:80.0%"
 > data-fig-align="center" />
-
-</div>
 
 ## Exercise 1: Getting started.
 
@@ -169,15 +171,11 @@ The folders contain all the materials needed to perform the exercises.
 
 - Check the setup for potential errors (see *Setup Options* ribbon).
 
-<div>
-
-> **Note**
+> [!NOTE]
 >
 > *You should normally have a configuration file identical to*
 > *`setup_measles_exercise_two.xlsb` in the* *`setup` folder. You can
 > also start from this file if you like.*
-
-</div>
 
 - Regenerate a new linelist named `linelist_measles_en_ex2` using the
   designer located in the `designer` folder. Save the linelist in the
@@ -185,9 +183,9 @@ The folders contain all the materials needed to perform the exercises.
   You’ll use the file `geobase-cod-2023-03-13_20230612.xlsx` in the
   `geobase` folder as your geobase.
 
-<div>
-
-> **Mac Users**
+> [!WARNING]
+>
+> ### Mac Users
 >
 > Sometimes generating the linelist using a ribbon file can fail on Mac.
 > In that case, it will default back to a linelist with button instead,
@@ -196,8 +194,6 @@ The folders contain all the materials needed to perform the exercises.
 >
 > You might experience screen flickering during the linelist creation
 > process.
-
-</div>
 
 - You are now ready to migrate your data from the old to the new
   linelist. You need to proceed in 2 steps:
@@ -236,15 +232,11 @@ We’ve decided to add some analyses on the type of discharge (variable
 
 - Check the setup for potential errors (see *Setup Options* ribbon).
 
-<div>
-
-> **Note**
+> [!NOTE]
 >
 > *You should get a configuration file identical to
 > `setup_measles_exercise_three.xlsb` in* *the `setup` folder. You can
 > also start from this file if you like.*
-
-</div>
 
 - Regenerate a new linelist named `linelist_measles_en_ex3` using the
   designer located in the `designer` folder. Save the linelist in the

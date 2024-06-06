@@ -63,16 +63,17 @@ utils::zip(
 
 # add the files to a zip file for demo
 utils::zip(
-    zipfile = "demo_usage_materials.zip",
+    zipfile = "demo_materials_usage.zip",
     files = c(
+    "./data/import_linelist_en.xlsx",
+    "./data/import_linelist_fr.xlsx",
     "./linelist/en/linelist_measles_usage_en.xlsb",
     "./linelist/fr/linelist_measles_usage_fr.xlsb",
     "./exercise/en/demo_usage_en.html",
     "./exercise/en/demo_usage_en.pdf",
     "./exercise/fr/demo_usage_fr.html",
     "./exercise/fr/demo_usage_fr.pdf",
-    "./guides/en/guide_obt_usage_en.pdf",
-    "./guides/en/guide_obt_usage_fr.pdf"
+    "./guides/en/OBT-GUI-002-V2.5-EN-User Guide OBT Linelist.pdf"
     ),
    flags = "-j"
 )

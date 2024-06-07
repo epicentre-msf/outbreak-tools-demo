@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.554">
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
   <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table des matières</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
@@ -50,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#exercise-using-linelist-features" id="toc-exercise-using-linelist-features" class="nav-link" data-scroll-target="#exercise-using-linelist-features">Exercise: Using linelist features</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="../../demo_usage_en.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="demo_usage_en.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="../../demo_usage_en.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="demo_usage_en.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Auteur·rice·s</div>
+  <div class="quarto-title-meta-heading">Authors</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>Outbreak-tools is a set of tools to facilitate the creation and maintainance of Excel linelists. In particular, you can easily:</p>
+<p>Outbreak-tools is a set of tools to facilitate the creation and maintenance of Excel linelists. In particular, you can easily:</p>
 <ul>
 <li>Define different types of variables (dropdown lists, Excel formulas) their format and data validation rules.</li>
 <li>Print a register book that perfectly match your linelist.</li>
@@ -112,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Migrate the data to an updated version of the linelist.</li>
 </ul>
 <p>The linelist is defined in a configuration file called <em>setup</em>. This <em>setup</em> file is then loaded into another file that designs the linelist (the <em>designer</em>). The designer creates the linelist, based on the configurations of the <em>setup</em>.</p>
-<p>The goal of this exercise is to explore the functionality and use of a measles linelist containing fictitious data.</p>
+<p>The goal of this exercise is to explore the functionalities and use of a measles linelist containing fictitious data.</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Functionalities">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -123,7 +123,7 @@ Functionalities
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The features are described in a user guide sent with this exercise. You can to get an idea of all the features available by reading the user guide. We’ll just go through a few of them in the linelist. The main ones are presented in the following two diagrams:</p>
+<p>The features are described in a user guide sent with this exercise. You can read it to get an idea of all the features available. We’ll just go through a few of them in this document. The main ones are presented in the following two diagrams:</p>
 </div>
 </div>
 <div id="fig-fonctionalites" class="quarto-layout-panel">
@@ -165,12 +165,12 @@ Figure&nbsp;1: Linelist Features
 </div>
 <section id="exercise-using-linelist-features" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-using-linelist-features">Exercise: Using linelist features</h2>
-<p>You have a linelist named <code>linelist_measles_usage_en.xlsb</code>, and an excel s sheet containing data called <code>import_linelist_en.xlsb</code>. We’re going to explore the linelist after importing the data from the sheet, and answer some questions.</p>
+<p>You have a linelist named <code>linelist_measles_usage_en.xlsb</code>, and an Excel sheet containing data called <code>import_linelist_en.xlsb</code>. We’re going to explore the linelist, and answer some questions.</p>
 <section id="discover-the-data-entry-sheet." class="level4">
 <h4 class="anchored" data-anchor-id="discover-the-data-entry-sheet.">1- Discover the data entry sheet.</h4>
 <p><em>Sorting data</em></p>
 <p>Sort the data in the ‘ID number’ column.</p>
-<p>To do this, Click on the <code>$A$9</code> cell.</p>
+<p>To do this, click on the <code>$A$9</code> cell.</p>
 <p>On the <code>OutbreakTools</code> tab, click on the <code>Sort Variable</code> button.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="Question">
 <div class="callout-header d-flex align-content-center">
@@ -187,7 +187,7 @@ Question
 </div>
 <p>Now sort the data on the column <code>Identification number padded</code>.</p>
 <p><em>Show/Hide Variables</em></p>
-<p>On the <code>OutbreakTools</code> tab, click on <code>Show/Hide Variables</code> button.</p>
+<p>On the <code>OutbreakTools</code> tab, click on the <code>Show/Hide Variables</code> button.</p>
 <p>Hide the first three custom variables.</p>
 </section>
 <section id="entering-data" class="level4">
@@ -202,20 +202,18 @@ Filling the Linelist
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><em>The GeoHelper</em></p>
-<p>The GeoHelper can help in entering geographical informations in a cascade way.</p>
+<p>The GeoHelper can help in entering geographical informations in a hierarchical way.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/geo-helper_en.png" class="img-fluid figure-img"></p>
-<figcaption>Geo Helper</figcaption>
+<figcaption>Geo helper</figcaption>
 </figure>
 </div>
-<p><em>Custom dropdowns</em></p>
-<p>You can use custom dropdowns prefill some dropdowns on your own, base on the informations you have, like for example the missing admin levels in the geobase.</p>
+<p>You can use custom dropdowns to prefill some dropdowns on your own, based on the informations you have, like for example the missing admin levels in the geobase.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/custom-dropdown_en.png" class="img-fluid figure-img"></p>
-<figcaption>Custom Dropdowns</figcaption>
+<figcaption>Custom dropdowns</figcaption>
 </figure>
 </div>
 </div>
@@ -246,17 +244,18 @@ Filling the Linelist
   Vaccination status unknown
   Date of discharge: 2023-11-12 (Cured)
 </code></pre>
-<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Questions">
+<p>Enter this data in the linelist. Filter the column <code>Date of onset of symptoms</code>.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Question">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Questions
+Question
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Enter this data in the linelist. Filter the column <code>Date of onset of symptoms</code>. Do you see any discrepancies? Correct them.</p>
+<p>Do you see any discrepancies? Correct them.</p>
 </div>
 </div>
 </section>
@@ -367,7 +366,7 @@ Questions
 <p>Where do most of the patients who die come from?</p>
 </div>
 </div>
-<p><em>Spacio-temporal analysis</em>.</p>
+<p><em>Spatio-temporal analysis</em>.</p>
 <p>Remember that we had to keep in mind the health area most affected.</p>
 <p>Click on the <code>Spatio-temporal analysis</code> sheet.</p>
 <p>In cell <code>$C$14</code>, click twice. A box for selecting locations is displayed.</p>
@@ -471,12 +470,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copié");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copié");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

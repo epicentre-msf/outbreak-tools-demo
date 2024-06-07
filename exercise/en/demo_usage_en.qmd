@@ -1,7 +1,7 @@
 ---
 title: "Overview of an Outbreak Tools linelist features"
 subtitle: ""
-lang: fr
+lang: en
 format: 
     html: 
       theme: default
@@ -24,7 +24,7 @@ affiliations:
 
 # Introduction
 
-Outbreak-tools is a set of tools to facilitate the creation and maintainance of Excel linelists. 
+Outbreak-tools is a set of tools to facilitate the creation and maintenance of Excel linelists. 
 In particular, you can easily:
 
 - Define different types of variables (dropdown lists, Excel formulas) their format and data validation rules.
@@ -42,16 +42,17 @@ The designer creates the linelist, based on the
 configurations of the *setup*.
 
 
-The goal of this exercise is to explore the functionality and use of a measles linelist
+The goal of this exercise is to explore the functionalities and use of a measles linelist
 containing fictitious data.
 
 
 ::: {.callout-important title="Functionalities"}
 
  The features are described in a user guide sent with this exercise. 
-You can 
-to get an idea of all the features available by reading the user guide. 
-We'll just go through a few of them in the linelist. The main ones are presented in the following two diagrams:
+You can read it
+to get an idea of all the features available. 
+We'll just go through a few of them in this document. 
+The main ones are presented in the following two diagrams:
 
 :::
 
@@ -68,9 +69,9 @@ We'll just go through a few of them in the linelist. The main ones are presented
 
 ## Exercise: Using linelist features
 
-You have a linelist named `linelist_measles_usage_en.xlsb`, and an excel s
+You have a linelist named `linelist_measles_usage_en.xlsb`, and an Excel
 sheet containing data called `import_linelist_en.xlsb`.
-We're going to explore the linelist after importing the data from the sheet, and answer some questions.
+We're going to explore the linelist, and answer some questions.
 
 
 #### 1- Discover the data entry sheet. 
@@ -80,7 +81,7 @@ We're going to explore the linelist after importing the data from the sheet, and
 Sort the data in the ‘ID number’ column. 
 
 To do this,
-Click on the `$A$9` cell. 
+click on the `$A$9` cell. 
 
 On the `OutbreakTools` tab, click on the `Sort Variable` button.
 
@@ -94,7 +95,7 @@ Now sort the data on the column `Identification number padded`.
 
 *Show/Hide Variables*
 
-On the `OutbreakTools` tab, click on `Show/Hide Variables` button.
+On the `OutbreakTools` tab, click on the `Show/Hide Variables` button.
 
 Hide the first three custom variables.
 
@@ -104,19 +105,17 @@ Hide the first three custom variables.
 
 ::: {.callout-note title="Filling the Linelist"}
 
-  *The GeoHelper*
 
-  The GeoHelper can help in entering geographical informations in a cascade way.
+  The GeoHelper can help in entering geographical informations in a hierarchical way.
 
-  ![Geo Helper](imgs/geo-helper_en.png)
+  ![Geo helper](imgs/geo-helper_en.png)
 
-  *Custom dropdowns*
 
-  You can use custom dropdowns prefill some dropdowns on your own, base on the
+  You can use custom dropdowns to prefill some dropdowns on your own, based on the
   informations you have, like for example the missing admin levels in the
   geobase.
 
-  ![Custom Dropdowns](imgs/custom-dropdown_en.png)
+  ![Custom dropdowns](imgs/custom-dropdown_en.png)
 
 
 
@@ -152,9 +151,10 @@ You have data for the following two patients:
 
 ```
 
-::: {.callout-tip title="Questions" icon="false"}
-
 Enter this data in the linelist. Filter the column `Date of onset of symptoms`.
+
+::: {.callout-tip title="Question" icon="false"}
+
 Do you see any discrepancies? Correct them.
 
 :::
@@ -261,7 +261,7 @@ Where do most of the patients who die come from?
 :::
 
 
-*Spacio-temporal analysis*.
+*Spatio-temporal analysis*.
 
 Remember that we had to keep in mind the health area most affected.
 

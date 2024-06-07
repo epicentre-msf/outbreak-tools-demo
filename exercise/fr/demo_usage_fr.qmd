@@ -69,7 +69,7 @@ qui contient des données fictives.
 
 Vous disposez d'une linelist nommée `linelist_measles_usage_fr.xlsb`, et d'une feuille excel 
 contenant des données appelée `import_linelist_fr.xlsb`.
-Nous allons explorer la linelist après avoir importé les données de la feuille, et
+Nous allons explorer la linelist, et
 répondre à certaines questions.
 
 
@@ -112,7 +112,7 @@ Cachez les trois premières variables personalisées.
   localité qui ne se trouve pas dans la géobase). Vous pouvez les remplir en utilisant
   les listes déroulantes personalisées.
 
-  ![Custom Dropdowns](imgs/custom-dropdown_fr.png)
+  ![Listes déroulantes personalisées](imgs/custom-dropdown_fr.png)
 
 :::
 

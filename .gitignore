@@ -2,3 +2,4 @@
 */*/demo_exercise_fr_files/
 *.text
 *.tex
+*.DS_Store

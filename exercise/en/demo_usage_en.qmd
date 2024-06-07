@@ -66,7 +66,6 @@ We'll just go through a few of them in the linelist. The main ones are presented
 
 
 
-
 ## Exercise: Using linelist features
 
 You have a linelist named `linelist_measles_usage_en.xlsb`, and an excel s
@@ -85,7 +84,11 @@ Click on the `$A$9` cell.
 
 On the `OutbreakTools` tab, click on the `Sort Variable` button.
 
+::: {.callout-tip title="Question" icon="false"}
+
 What are your thoughts?
+
+:::
 
 Now sort the data on the column `Identification number padded`.
 
@@ -97,7 +100,7 @@ Hide the first three custom variables.
 
 #### 2- Entering data
 
-You have data for the following two patients:
+
 
 ::: {.callout-note title="Filling the Linelist"}
 
@@ -105,7 +108,7 @@ You have data for the following two patients:
 
   The GeoHelper can help in entering geographical informations in a cascade way.
 
-
+  ![Geo Helper](imgs/geo-helper_en.png)
 
   *Custom dropdowns*
 
@@ -113,10 +116,13 @@ You have data for the following two patients:
   informations you have, like for example the missing admin levels in the
   geobase.
 
+  ![Custom Dropdowns](imgs/custom-dropdown_en.png)
+
 
 
 :::
 
+You have data for the following two patients:
 
 ```
   Patient 1:
@@ -146,8 +152,12 @@ You have data for the following two patients:
 
 ```
 
-Enter this data in the linelist.
+::: {.callout-tip title="Questions" icon="false"}
 
+Enter this data in the linelist. Filter the column `Date of onset of symptoms`.
+Do you see any discrepancies? Correct them.
+
+:::
 
 #### 3- Browse analyses
 
@@ -156,10 +166,14 @@ Click on the sheet `Uni and bi-variate analyses`.
 *Global overview, univariate analyses*.
 
 In the `OutbreakTools` tab, click on `Refresh analyses`.
+
+::: {.callout-tip title="Questions" icon="false"}
+
 How many patients do you have in the database?
 What is the case fatality rate?
 What is the proportion of children under 5?
 
+:::
 
 *Analysis on filtered data*.
 
@@ -170,7 +184,12 @@ Click on the sheet `Uni and bi-variate analyses` then click on
 `Refresh analyses` in the `OutbreakTools` tab.
 
 You now have analyses only on the data you have filtered.
+
+::: {.callout-tip title="Question" icon="false"}
+
 What is the CFR of children under 5?
+
+:::
 
 *Bivariate analysis*
 
@@ -181,11 +200,15 @@ In the `OutbreakTools` tab click on `Remove all filters`.
 Click on the `Uni and bi-variate analyses` sheet.
 
 Using the `Go to Section` button on the `$C$2` tab, select the 
-the section `Patient Age Characteristics`.
+the section `Patient Age Characteristics`. Remember to refresh the analyses.
+
+::: {.callout-tip title="Questions" icon="false"}
 
 Among the unvaccinated patients, what is the most represented age group?
 
 Have any adult patients (over 15 years of age) died? How many?
+
+:::
 
 *Temporal analysis*
 
@@ -194,6 +217,8 @@ Click on the `Temporal analyses` sheet, and update the analyses as before.
 In cell `$G$11$`, choose the month as the time unit.
 
 In cell `$E$11`, set the start date as 2019-01-01.
+
+::: {.callout-tip title="Questions" icon="false"}
 
 During 2019, in which month were there the most cases?
 
@@ -204,11 +229,18 @@ were there the most cases?
 
 During this epidemiological week, what was the case fatality rate?
 
+:::
+
 *You can use the filters in the `Patient list` sheet to answer the following questions*.
+
+
+::: {.callout-tip title="Questions" icon="false"}
 
 What is the case-fatality rate for under-5 during the most affected epidemiological week? 
 
 In which epidemiological week were the most deaths recorded?
+
+:::
 
 
 *Spatial analysis*
@@ -218,11 +250,15 @@ as before.
 
 In cell `$C$14$`, select the option `Health-area`.
 
+::: {.callout-tip title="Questions" icon="false"}
+
 How many patients have no information about their origin?
 
 Which health area is the most affected? We will keep its name for future use.
 
 Where do most of the patients who die come from?
+
+:::
 
 
 *Spacio-temporal analysis*.
@@ -238,7 +274,11 @@ Select the most affected health area. You can stop at level 3 and click OK.
 
 Then update the analyses as before.
 
+::: {.callout-tip title="Question" icon="false"}
+
 During the epidemic, this health area had the most cases in which week?
+
+:::
 
 You can choose up to 10 health areas and display them on a
 graph if you wish.
@@ -263,6 +303,10 @@ On the `OutbreakTools` tab, click on the `Import data` button.
 Browse and select the `import_linelist_en.xlsb` file, then click OK.
 
 At the end of the import, you will be asked if you want to see a report. Select ‘Yes’.
+
+::: {.callout-tip title="Question" icon="false"}
+
 Which variables are not available in the imported data?
 
+:::
 

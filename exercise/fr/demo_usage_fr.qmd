@@ -103,15 +103,17 @@ Cachez les trois premières variables personalisées.
 
 #### 2- Saisir des données
 
-::: {.callout-note title="Aide au remplissage"}
+::: {.callout-note title="Aide au remplissage" icon="false"}
 
   Le GeoHelper permet d'entrer les données sur les origines géographiques en cascade.
 
-
+  ![Geo Helper](imgs/geo-helper_fr.png)
 
   Certaines colonnes sont des listes déroulantes personnalisées (par ex une colonne pour une
   localité qui ne se trouve pas dans la géobase). Vous pouvez les remplir en utilisant
   les listes déroulantes personalisées.
+
+  ![Custom Dropdowns](imgs/custom-dropdown_fr.png)
 
 :::
 
@@ -160,10 +162,16 @@ Cliquez sur la feuille `Analyses Uni et bi-variées`.
 *Apperçu Global, analyses univariées*
 
 Dans l'onglet `OutbreakTools`, cliquez sur `Actualiser les analyses`.
+
+::: {.callout-tip title="Questions" icon="false"}
+
 Combien de patients avez-vous dans la base de données?
+
 Quelle est la létalité?
+
 Quelle est la proportion des enfants de moins de 5 ans?
 
+:::
 
 *Analyses sur des données filtrées*
 
@@ -190,18 +198,16 @@ cliquez sur `Supprimer tous les filtres`.
 
 Cliquez sur la feuille `Analyses uni et bi-variées`.
 
-Cliquez sur la cellule `$C$2` où est écrit `Aller à la section`, puis sélectionnez la section `Caractéristiques de l'âge des patients`.
+Cliquez sur la cellule `$C$2` où est écrit `Aller à la section`, 
+puis sélectionnez la section `Caractéristiques de l'âge des patients`.
+Rappelez-vous d'actualiser les analyses.
 
-::: {.callout-tip title="Questions"}
+::: {.callout-tip title="Questions" icon="false"}
 
 Parmi les patients non vaccinés, quel est le groupe d'âge le plus
 représenté?
 
-Y a t-il des patients adultes (de plus de 15 ans) décédés?
-
-Quand ces patients sont-ils décédés?
-
-Dans quelle semaine épidémiologique a-t-on eu plus de patients décédés?
+Y a t-il des patients adultes (de plus de 15 ans) décédés? Combien?
 
 :::
 
@@ -223,9 +229,10 @@ Au cours de ce mois de l'année 2019, dans quelle semaine épidémiologique as-t
 En général au cours de l'épidémie, dans quelle semaine épidémiologique
 as-ton eu le plus de cas?
 
+Au cours de cette semaine, quelle est la létalité?
+
 :::
 
-Au cours de cette semaine, quelle est la létalité?
 
 *Vous pourrez utiliser les filtres dans la feuille `Linelist patients` pour répondre à ces question*
 
@@ -286,7 +293,8 @@ Cliquez sur `Exportation anonyme pour le MoH`. Choisissez où vous
 vouler enregistrer l'export.
 
 Faites de même en cliquant sur  `Exportation anonyme pour MSF`. C'est 
-cet export qui est envoyé au dashboard. Il ne faut pas renommer le fichier exporté. Vous pouvez l'ouvrir pour explorer les données et regarder
+cet export qui est envoyé au dashboard. Il ne faut pas renommer le fichier exporté.
+Vous pouvez l'ouvrir pour explorer les données et regarder
 les différences entre les deux exports (MoH et MSF). 
 Le mot de passe est 1234.
 
@@ -294,13 +302,16 @@ Le mot de passe est 1234.
 #### 5- (Bonus) Importer des données
 
 Dans l'onglet `OutbreakTools`, dans la section `Imports`, cliquez
-sur le bouton `Importer des données`. Naviguez et sélectionnez le fichier `import_linelist_fr.xlsb` puis validez.
+sur le bouton `Importer des données`. Naviguez et sélectionnez le fichier
+`import_linelist_fr.xlsb` puis validez.
 Ajouter les données du fichier à celles déjà présentes dans la linelist.
-A la fin de l'import, on vous demandera si vous voulez voir un rapport. Sélectionnez "Oui".
+A la fin de l'import, on vous demandera si vous voulez voir un rapport. 
+Sélectionnez "Oui".
 
 
-::: {.callout-tip title = "Question" icon="false"}
+::: {.callout-tip title="Question" icon="false"}
 
 Quelles sont les variables qui ne sont pas disponibles dans les données importées?
+
 :::
 

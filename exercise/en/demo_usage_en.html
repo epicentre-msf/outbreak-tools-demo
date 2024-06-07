@@ -166,17 +166,25 @@ Figure&nbsp;1: Linelist Features
 <section id="exercise-using-linelist-features" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-using-linelist-features">Exercise: Using linelist features</h2>
 <p>You have a linelist named <code>linelist_measles_usage_en.xlsb</code>, and an excel s sheet containing data called <code>import_linelist_en.xlsb</code>. We’re going to explore the linelist after importing the data from the sheet, and answer some questions.</p>
-<section id="import-data-discover-the-data-entry-sheet." class="level4">
-<h4 class="anchored" data-anchor-id="import-data-discover-the-data-entry-sheet.">1- Import data, discover the data entry sheet.</h4>
-<p><em>Import data</em></p>
-<p>Open the <code>linelist_measles_usage_en.xlsb</code> sheet.</p>
-<p>On the <code>OutbreakTools</code> tab, click on the <code>Import data</code> button. Browse and select the <code>import_linelist_en.xlsb</code> file, then click OK.</p>
-<p>At the end of the import, you will be asked if you want to see a report. Select ‘Yes’. Which variables are not available in the imported data?</p>
+<section id="discover-the-data-entry-sheet." class="level4">
+<h4 class="anchored" data-anchor-id="discover-the-data-entry-sheet.">1- Discover the data entry sheet.</h4>
 <p><em>Sorting data</em></p>
 <p>Sort the data in the ‘ID number’ column.</p>
 <p>To do this, Click on the <code>$A$9</code> cell.</p>
 <p>On the <code>OutbreakTools</code> tab, click on the <code>Sort Variable</code> button.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Question">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>What are your thoughts?</p>
+</div>
+</div>
 <p>Now sort the data on the column <code>Identification number padded</code>.</p>
 <p><em>Show/Hide Variables</em></p>
 <p>On the <code>OutbreakTools</code> tab, click on <code>Show/Hide Variables</code> button.</p>
@@ -184,6 +192,34 @@ Figure&nbsp;1: Linelist Features
 </section>
 <section id="entering-data" class="level4">
 <h4 class="anchored" data-anchor-id="entering-data">2- Entering data</h4>
+<div class="callout callout-style-default callout-note callout-titled" title="Filling the Linelist">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Filling the Linelist
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>The GeoHelper</em></p>
+<p>The GeoHelper can help in entering geographical informations in a cascade way.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/geo-helper_en.png" class="img-fluid figure-img"></p>
+<figcaption>Geo Helper</figcaption>
+</figure>
+</div>
+<p><em>Custom dropdowns</em></p>
+<p>You can use custom dropdowns prefill some dropdowns on your own, base on the informations you have, like for example the missing admin levels in the geobase.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/custom-dropdown_en.png" class="img-fluid figure-img"></p>
+<figcaption>Custom Dropdowns</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <p>You have data for the following two patients:</p>
 <pre><code>  Patient 1:
 
@@ -210,48 +246,146 @@ Figure&nbsp;1: Linelist Features
   Vaccination status unknown
   Date of discharge: 2023-11-12 (Cured)
 </code></pre>
-<p>Enter this data in the linelist.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Enter this data in the linelist. Filter the column <code>Date of onset of symptoms</code>. Do you see any discrepancies? Correct them.</p>
+</div>
+</div>
 </section>
 <section id="browse-analyses" class="level4">
 <h4 class="anchored" data-anchor-id="browse-analyses">3- Browse analyses</h4>
 <p>Click on the sheet <code>Uni and bi-variate analyses</code>.</p>
 <p><em>Global overview, univariate analyses</em>.</p>
-<p>In the <code>OutbreakTools</code> tab, click on <code>Refresh analyses</code>. How many patients do you have in the database? What is the case fatality rate? What is the proportion of children under 5?</p>
+<p>In the <code>OutbreakTools</code> tab, click on <code>Refresh analyses</code>.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>How many patients do you have in the database? What is the case fatality rate? What is the proportion of children under 5?</p>
+</div>
+</div>
 <p><em>Analysis on filtered data</em>.</p>
 <p>Click on the sheet <code>Linelist patients</code> and filter the <code>age group</code> column to keep only children under 5.</p>
 <p>Click on the sheet <code>Uni and bi-variate analyses</code> then click on <code>Refresh analyses</code> in the <code>OutbreakTools</code> tab.</p>
-<p>You now have analyses only on the data you have filtered. What is the CFR of children under 5?</p>
+<p>You now have analyses only on the data you have filtered.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Question">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What is the CFR of children under 5?</p>
+</div>
+</div>
 <p><em>Bivariate analysis</em></p>
 <p>Click on the sheet <code>Linelist patients</code>.</p>
 <p>In the <code>OutbreakTools</code> tab click on <code>Remove all filters</code>.</p>
 <p>Click on the <code>Uni and bi-variate analyses</code> sheet.</p>
-<p>Using the <code>Go to Section</code> button on the <code>$C$2</code> tab, select the the section <code>Patient Age Characteristics</code>.</p>
+<p>Using the <code>Go to Section</code> button on the <code>$C$2</code> tab, select the the section <code>Patient Age Characteristics</code>. Remember to refresh the analyses.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Among the unvaccinated patients, what is the most represented age group?</p>
 <p>Have any adult patients (over 15 years of age) died? How many?</p>
+</div>
+</div>
 <p><em>Temporal analysis</em></p>
 <p>Click on the <code>Temporal analyses</code> sheet, and update the analyses as before.</p>
 <p>In cell <code>$G$11$</code>, choose the month as the time unit.</p>
 <p>In cell <code>$E$11</code>, set the start date as 2019-01-01.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>During 2019, in which month were there the most cases?</p>
 <p>During this month of 2019, in which epidemiological week were there the most cases?</p>
 <p>Overall during the epidemic, in which epidemiological week were there the most cases?</p>
 <p>During this epidemiological week, what was the case fatality rate?</p>
+</div>
+</div>
 <p><em>You can use the filters in the <code>Patient list</code> sheet to answer the following questions</em>.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>What is the case-fatality rate for under-5 during the most affected epidemiological week?</p>
 <p>In which epidemiological week were the most deaths recorded?</p>
+</div>
+</div>
 <p><em>Spatial analysis</em></p>
 <p>Click on the <code>Spatial analyses</code> sheet and refresh the analyses as before.</p>
 <p>In cell <code>$C$14$</code>, select the option <code>Health-area</code>.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Questions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>How many patients have no information about their origin?</p>
 <p>Which health area is the most affected? We will keep its name for future use.</p>
 <p>Where do most of the patients who die come from?</p>
+</div>
+</div>
 <p><em>Spacio-temporal analysis</em>.</p>
 <p>Remember that we had to keep in mind the health area most affected.</p>
 <p>Click on the <code>Spatio-temporal analysis</code> sheet.</p>
 <p>In cell <code>$C$14</code>, click twice. A box for selecting locations is displayed.</p>
 <p>Select the most affected health area. You can stop at level 3 and click OK.</p>
 <p>Then update the analyses as before.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Question">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>During the epidemic, this health area had the most cases in which week?</p>
+</div>
+</div>
 <p>You can choose up to 10 health areas and display them on a graph if you wish.</p>
 </section>
 <section id="exporting-data" class="level4">
@@ -259,6 +393,24 @@ Figure&nbsp;1: Linelist Features
 <p>In the <code>OutbreakTools</code> tab, click on <code>Export Data</code> button.</p>
 <p>Click on <code>Anonymous export for MoH</code>. Choose where you want to save the export.</p>
 <p>Do the same and make an <code>Anonymous export for MSF</code>. This is the export that is sent to the dashboard. Don’t rename it. You can open it to explore the data and see the differences between the two exports. The password is 1234.</p>
+</section>
+<section id="bonus-import-data." class="level4">
+<h4 class="anchored" data-anchor-id="bonus-import-data.">5- (Bonus) Import data.</h4>
+<p>On the <code>OutbreakTools</code> tab, click on the <code>Import data</code> button. Browse and select the <code>import_linelist_en.xlsb</code> file, then click OK.</p>
+<p>At the end of the import, you will be asked if you want to see a report. Select ‘Yes’.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Question">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Which variables are not available in the imported data?</p>
+</div>
+</div>
 </section>
 </section>
 </section>

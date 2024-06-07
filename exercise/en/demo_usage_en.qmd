@@ -74,18 +74,7 @@ sheet containing data called `import_linelist_en.xlsb`.
 We're going to explore the linelist after importing the data from the sheet, and answer some questions.
 
 
-#### 1- Import data, discover the data entry sheet. 
-
-
-*Import data*
-
-Open the `linelist_measles_usage_en.xlsb` sheet. 
-
-On the `OutbreakTools` tab, click on the `Import data` button.
-Browse and select the `import_linelist_en.xlsb` file, then click OK.
-
-At the end of the import, you will be asked if you want to see a report. Select ‘Yes’.
-Which variables are not available in the imported data?
+#### 1- Discover the data entry sheet. 
 
 *Sorting data*
 
@@ -109,6 +98,25 @@ Hide the first three custom variables.
 #### 2- Entering data
 
 You have data for the following two patients:
+
+::: {.callout-note title="Filling the Linelist"}
+
+  *The GeoHelper*
+
+  The GeoHelper can help in entering geographical informations in a cascade way.
+
+
+
+  *Custom dropdowns*
+
+  You can use custom dropdowns prefill some dropdowns on your own, base on the
+  informations you have, like for example the missing admin levels in the
+  geobase.
+
+
+
+:::
+
 
 ```
   Patient 1:
@@ -247,5 +255,14 @@ Do the same and make an `Anonymous export for MSF`. This is the
 export that is sent to the dashboard. Don't rename it. You can open it to explore the data and see
 the differences between the two exports. The password is 1234.
 
+
+
+#### 5- (Bonus) Import data. 
+
+On the `OutbreakTools` tab, click on the `Import data` button.
+Browse and select the `import_linelist_en.xlsb` file, then click OK.
+
+At the end of the import, you will be asked if you want to see a report. Select ‘Yes’.
+Which variables are not available in the imported data?
 
 

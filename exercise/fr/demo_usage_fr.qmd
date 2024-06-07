@@ -29,10 +29,10 @@ la maintenance de linelist Excel. En particulier, vous pouvez facilement:
 
 - Définir différents types de variables (listes déroulantes, formules Excel), 
 leur format et les règles de validation des données.
-- Imprimer un registre qui correspond parfaitement à votre linelist.
+- Imprimer un registre qui correspond à votre linelist.
 - Traduire votre liste en plusieurs langues.
 - Utiliser des bases de données géographiques prédéfinies pour l'origine des patients.
-- Afficher des analyses personnalisées (univariées, bivariées, temporelles, spatiales) sous forme de tableaux et de graphiques.  
+- Afficher des analyses personnalisées (univariées, bivariées, temporelles, spatiales) sous forme de tableaux et de graphiques.
 - Exporter l'ensemble des données ou des variables/lignes sélectionnées.
 - Migrer les données vers une version mise à jour de la liste des lignes.
 
@@ -73,20 +73,8 @@ Nous allons explorer la linelist après avoir importé les données de la feuill
 répondre à certaines questions.
 
 
-#### 1- Importer des données, découvrir la feuille de saisie de données. 
+#### 1- Découvrir la feuille de saisie de données. 
 
-
-
-
-*Importer des données*
-
-Ouvrir la feuille `linelist_measles_usage_fr.xlsb`. 
-
-Dans l'onglet `OutbreakTools`, dans la section `Imports`, cliquez
-sur le bouton `Importer des données`. Naviguez et sélectionnez le fichier `import_linelist_fr.xlsb` puis validez.
-
-A la fin de l'import, on vous demandera si vous voulez voir un rapport. Sélectionnez "Oui".
-Quelles sont les variables qui ne sont pas disponibles dans les données importées?
 
 *Trier des données*
 
@@ -98,7 +86,12 @@ Cliquez sur la cellule `$A$9`.
 Dans l'onglet `OutbreakTools`,
  cliquez sur le bouton `Trier la variable`.
 
+::: {.callout-tip title="Question" icon="false"}
+
 Que remarquez-vous?
+
+:::
+
 
 Triez maintenant les données sur la colonne `Numéro d'identification calculé`.
 
@@ -110,9 +103,19 @@ Cachez les trois premières variables personalisées.
 
 #### 2- Saisir des données
 
+::: {.callout-note title="Aide au remplissage"}
+
+  Le GeoHelper permet d'entrer les données sur les origines géographiques en cascade.
+
+
+
+  Certaines colonnes sont des listes déroulantes personnalisées (par ex une colonne pour une
+  localité qui ne se trouve pas dans la géobase). Vous pouvez les remplir en utilisant
+  les listes déroulantes personalisées.
+
+:::
+
 Vous diposez des données pour les deux patients suivants:
-
-
 
 ```
   Patient 1:
@@ -141,7 +144,14 @@ Vous diposez des données pour les deux patients suivants:
   Date de sortie: 2023-11-12 (Guéri)
 ```
 
+::: {.callout-tip title="Questions" icon="false"}
+
 Saisissez ces données.
+
+Filtrez la colonne `Date d'apparition des symptômes`. Avez-vous
+des données incohérentes? Corrigez-les.
+
+:::
 
 #### 3- Parcourir les analyses
 
@@ -164,7 +174,12 @@ Cliquez sur la feuille `Analyses Uni et bi-variées` puis cliquez sur
 `Actualiser les analyses` dans l'onglet `OutbreakTools`.
 
 Vous disposez maintenant des analyses que sur les données que vous avez filtrez.
+
+::: {.callout-tip title="Question" icon="false"}
+
 Quelle est la létalité des enfants de moins de 5 ans?
+
+:::
 
 *Analyses bivariées*
 
@@ -175,8 +190,9 @@ cliquez sur `Supprimer tous les filtres`.
 
 Cliquez sur la feuille `Analyses uni et bi-variées`.
 
-Grâce au bouton `Aller à la section` à l'onglet `$C$2`, sélectionnez
-la section `Caractéristiques de l'âge des patients`.
+Cliquez sur la cellule `$C$2` où est écrit `Aller à la section`, puis sélectionnez la section `Caractéristiques de l'âge des patients`.
+
+::: {.callout-tip title="Questions"}
 
 Parmi les patients non vaccinés, quel est le groupe d'âge le plus
 représenté?
@@ -184,6 +200,10 @@ représenté?
 Y a t-il des patients adultes (de plus de 15 ans) décédés?
 
 Quand ces patients sont-ils décédés?
+
+Dans quelle semaine épidémiologique a-t-on eu plus de patients décédés?
+
+:::
 
 *Analyses temporelles*
 
@@ -194,6 +214,8 @@ Dans la cellule `$G$11$`, choisissez comme unité temporelle le mois.
 
 Dans la cellule `$E$11`, mettez comme date de début 2019-01-01
 
+::: { .callout-tip title="Questions" icon="false"}
+
 Au cours de l'année 2019, dans quel mois a-t-on eu le plus de cas?
 
 Au cours de ce mois de l'année 2019, dans quelle semaine épidémiologique as-ton eu plus de cas?
@@ -201,13 +223,15 @@ Au cours de ce mois de l'année 2019, dans quelle semaine épidémiologique as-t
 En général au cours de l'épidémie, dans quelle semaine épidémiologique
 as-ton eu le plus de cas?
 
+:::
+
 Au cours de cette semaine, quelle est la létalité?
 
 *Vous pourrez utiliser les filtres dans la feuille `Linelist patients` pour répondre à ces question*
 
 Quelle est la létalité des moins de 5 ans au cours de la semaine épidémiologique où l'on a eu le plus de cas? 
 
-Dans quelle semaine épidémiologique as-ton enregistré le plus de décès?
+Dans quelle semaine épidémiologique a-t-on enregistré le plus de décès?
 
 
 *Analyses spatiales*
@@ -217,11 +241,15 @@ comme précédement.
 
 Dans la cellule `$C$14$`, Sélectionnez l'option `Aire de Santé`.
 
+::: { .callout-tip title="Questions" icon="false"}
+
 Combien de patients n'ont pas d'information sur leur origine?
 
 Quelle est l'aire de santé la plus touchée? Nous garderons son nom pour l'utiliser plus tard.
 
-D'où vient la plupart des patients qui décèdent?
+D'où viennent la plupart des patients qui décèdent?
+
+:::
 
 
 *Analyses spatio-temporelles*
@@ -238,7 +266,12 @@ niveau 3 puis cliquez sur OK.
 
 Actualisez ensuite les analyses comme précédement.
 
+
+::: { .callout-tip title="Question" icon="false"}
+
 Au cours de l'épidémie, cette aire de santé a connu le plus de cas quelle semaine?
+
+:::
 
 Vous pouvez choisir jusqu'à 10 aires de santé et les visualiser sur un
 graphe si vous le voulez.
@@ -252,9 +285,22 @@ Dans l'onglet `OutbreakTools`, cliquez sur
 Cliquez sur `Exportation anonyme pour le MoH`. Choisissez où vous
 vouler enregistrer l'export.
 
-Faites de mêmes et faites une `Exportation anonyme pour MSF`. C'est 
-cette exportation qui est envoyée au dashboard. Il ne faut pas la renommer. Vous pouvez l'ouvrir pour explorer les données et regarder
-les différences entre les deux exports. Le mot de passe est 1234.
+Faites de même en cliquant sur  `Exportation anonyme pour MSF`. C'est 
+cet export qui est envoyé au dashboard. Il ne faut pas renommer le fichier exporté. Vous pouvez l'ouvrir pour explorer les données et regarder
+les différences entre les deux exports (MoH et MSF). 
+Le mot de passe est 1234.
 
 
+#### 5- (Bonus) Importer des données
+
+Dans l'onglet `OutbreakTools`, dans la section `Imports`, cliquez
+sur le bouton `Importer des données`. Naviguez et sélectionnez le fichier `import_linelist_fr.xlsb` puis validez.
+Ajouter les données du fichier à celles déjà présentes dans la linelist.
+A la fin de l'import, on vous demandera si vous voulez voir un rapport. Sélectionnez "Oui".
+
+
+::: {.callout-tip title = "Question" icon="false"}
+
+Quelles sont les variables qui ne sont pas disponibles dans les données importées?
+:::
 

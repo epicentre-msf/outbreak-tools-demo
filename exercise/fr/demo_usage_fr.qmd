@@ -25,7 +25,7 @@ affiliations:
 # Introduction
 
 Outbreak-tools est un ensemble d'outils destinés à faciliter la création et 
-la maintenance de linelist Excel. En particulier, vous pouvez facilement:
+la maintenance de linelists Excel. En particulier, vous pouvez facilement :
 
 - Définir différents types de variables (listes déroulantes, formules Excel), 
 leur format et les règles de validation des données.
@@ -41,16 +41,16 @@ Ce fichier *setup* est ensuite chargé dans un autre fichier qui conçoit
 linelist appelé  *designer*. 
 Le *designer* crée la linelist en se basant sur les configurations du *setup*.
 
-L'objectif de cet exercice est d'explorer les fonctionalités et l'utilisation d'une linelist rougeole
+L'objectif de cet exercice est d'explorer les fonctionnalités et l'utilisation d'une linelist rougeole
 qui contient des données fictives.
 
 
-::: {.callout-important title="Présentation des fonctionalités"}
+::: {.callout-important title="Présentation des fonctionnalités"}
 
   Les fonctionalités sont décrites dans un guide utilisateur transmis avec cet exercice. 
   Vous pouvez 
   le parcourir plus tard pour avoir une idée de toutes les fonctionalités disponibles. 
-  Nous n'allons parcourir que quelques-uns dans la linelist présentés à partir des deux schémas suivants:
+  Nous n'allons parcourir que quelques-unes dans la linelist présentées à partir des deux schémas suivants :
 
 :::
 
@@ -60,12 +60,12 @@ qui contient des données fictives.
 
   ![Fonctionalités](./imgs/features_fr.png){#fig-feature}
 
-  Fonctionalités de la linelist
+  Fonctionnalités de la linelist
 :::
 
 
 
-## Exercice: Utilisation des fonctionalités de la linelist
+## Exercice : Utilisation des fonctionnalités de la linelist
 
 Vous disposez d'une linelist nommée `linelist_measles_usage_fr.xlsb`, et d'une feuille excel 
 contenant des données appelée `import_linelist_fr.xlsb`.
@@ -81,14 +81,13 @@ répondre à certaines questions.
 Triez les données  de la colonne `Numéro d'identification`. 
 
 Pour cela,
-Cliquez sur la cellule `$A$9`. 
-
-Dans l'onglet `OutbreakTools`,
+Cliquez sur la cellule `$A$9`, puis
+dans l'onglet `OutbreakTools`,
  cliquez sur le bouton `Trier la variable`.
 
 ::: {.callout-tip title="Question" icon="false"}
 
-Que remarquez-vous?
+Que remarquez-vous ?
 
 :::
 
@@ -120,30 +119,30 @@ Cachez les trois premières variables personalisées.
 Vous diposez des données pour les deux patients suivants:
 
 ```
-  Patient 1:
+  Patient 1 :
 
-  Date de notification: 2023-10-22
-  Nom et prénom: John Doe
-  Sexe: Masculin
-  Age: 3 ans
-  Origine: Lualabala, Kapanga, Kanampumb, Kasankara
-  Date d'apparition des symptomes: 2023-10-18
-  Date d'hospitalisation: 2023-10-25
-  Vacciné contre la rougeole: non
-  Date de sortie: 2023-11-01 (Décédé)
+  Date de notification : 2023-10-22
+  Nom et prénom : John Doe
+  Sexe : Masculin
+  Age : 3 ans
+  Origine : Lualabala, Kapanga, Kanampumb, Kasankara
+  Date d'apparition des symptomes : 2023-10-18
+  Date d'hospitalisation : 2023-10-25
+  Vacciné contre la rougeole : non
+  Date de sortie : 2023-11-01 (Décédé)
 
-  Patient 2:
+  Patient 2 :
 
-  Numéro Identifiant: 44
-  Date de notification: 2023-11-05
-  Nom: Jane Doe
-  Sexe: Féminin
-  Age: 7 mois
-  Origine: Lualabala, Kapanga, Mulambu, Mulambu
-  Date d'apparition des symptomes: 2023-11-04
-  Date d'hospitalisation: 2023-11-10
-  Statut vaccinal inconnu
-  Date de sortie: 2023-11-12 (Guéri)
+  Numéro Identifiant : 44
+  Date de notification : 2023-11-05
+  Nom : Jane Doe
+  Sexe : Féminin
+  Age : 7 mois
+  Origine : Lualabala, Kapanga, Mulambu, Mulambu
+  Date d'apparition des symptomes : 2023-11-04
+  Date d'hospitalisation : 2023-11-10
+  Statut vaccinal : inconnu
+  Date de sortie : 2023-11-12 (Guéri)
 ```
 
 ::: {.callout-tip title="Questions" icon="false"}
@@ -151,7 +150,7 @@ Vous diposez des données pour les deux patients suivants:
 Saisissez ces données.
 
 Filtrez la colonne `Date d'apparition des symptômes`. Avez-vous
-des données incohérentes? Corrigez-les.
+des données incohérentes ? Corrigez-les.
 
 :::
 
@@ -159,17 +158,17 @@ des données incohérentes? Corrigez-les.
 
 Cliquez sur la feuille `Analyses Uni et bi-variées`.
 
-*Apperçu Global, analyses univariées*
+*Apperçu global, analyses univariées*
 
 Dans l'onglet `OutbreakTools`, cliquez sur `Actualiser les analyses`.
 
 ::: {.callout-tip title="Questions" icon="false"}
 
-Combien de patients avez-vous dans la base de données?
+Combien de patients avez-vous dans la base de données ?
 
-Quelle est la létalité?
+Quelle est la létalité ?
 
-Quelle est la proportion des enfants de moins de 5 ans?
+Quelle est la proportion des enfants de moins de 5 ans ?
 
 :::
 
@@ -185,7 +184,7 @@ Vous disposez maintenant des analyses que sur les données que vous avez filtrez
 
 ::: {.callout-tip title="Question" icon="false"}
 
-Quelle est la létalité des enfants de moins de 5 ans?
+Quelle est la létalité des enfants de moins de 5 ans ?
 
 :::
 
@@ -205,9 +204,9 @@ Rappelez-vous d'actualiser les analyses.
 ::: {.callout-tip title="Questions" icon="false"}
 
 Parmi les patients non vaccinés, quel est le groupe d'âge le plus
-représenté?
+représenté ?
 
-Y a t-il des patients adultes (de plus de 15 ans) décédés? Combien?
+Y a t-il des patients adultes (de plus de 15 ans) décédés ? Combien ?
 
 :::
 
@@ -222,23 +221,23 @@ Dans la cellule `$E$11`, mettez comme date de début 2019-01-01
 
 ::: { .callout-tip title="Questions" icon="false"}
 
-Au cours de l'année 2019, dans quel mois a-t-on eu le plus de cas?
+Au cours de l'année 2019, dans quel mois a-t-on eu le plus de cas ?
 
-Au cours de ce mois de l'année 2019, dans quelle semaine épidémiologique as-ton eu plus de cas?
+Au cours de ce mois de l'année 2019, dans quelle semaine épidémiologique as-ton eu plus de cas ?
 
 En général au cours de l'épidémie, dans quelle semaine épidémiologique
-as-ton eu le plus de cas?
+as-ton eu le plus de cas ?
 
-Au cours de cette semaine, quelle est la létalité?
+Au cours de cette semaine, quelle est la létalité ?
 
 :::
 
 
-*Vous pourrez utiliser les filtres dans la feuille `Linelist patients` pour répondre à ces question*
+*Vous pourrez utiliser les filtres dans la feuille `Linelist patients` pour répondre à ces questions*
 
-Quelle est la létalité des moins de 5 ans au cours de la semaine épidémiologique où l'on a eu le plus de cas? 
+Quelle est la létalité des moins de 5 ans au cours de la semaine épidémiologique où l'on a eu le plus de cas ? 
 
-Dans quelle semaine épidémiologique a-t-on enregistré le plus de décès?
+Dans quelle semaine épidémiologique a-t-on enregistré le plus de décès ?
 
 
 *Analyses spatiales*
@@ -250,11 +249,11 @@ Dans la cellule `$C$14$`, Sélectionnez l'option `Aire de Santé`.
 
 ::: { .callout-tip title="Questions" icon="false"}
 
-Combien de patients n'ont pas d'information sur leur origine?
+Combien de patients n'ont pas d'information sur leur origine ?
 
-Quelle est l'aire de santé la plus touchée? Nous garderons son nom pour l'utiliser plus tard.
+Quelle est l'aire de santé la plus touchée ? Nous garderons son nom pour l'utiliser plus tard.
 
-D'où viennent la plupart des patients qui décèdent?
+D'où viennent la plupart des patients qui décèdent ?
 
 :::
 
@@ -276,7 +275,7 @@ Actualisez ensuite les analyses comme précédement.
 
 ::: { .callout-tip title="Question" icon="false"}
 
-Au cours de l'épidémie, cette aire de santé a connu le plus de cas quelle semaine?
+Au cours de l'épidémie, cette aire de santé a connu le plus de cas quelle semaine ?
 
 :::
 
@@ -304,14 +303,14 @@ Le mot de passe est 1234.
 Dans l'onglet `OutbreakTools`, dans la section `Imports`, cliquez
 sur le bouton `Importer des données`. Naviguez et sélectionnez le fichier
 `import_linelist_fr.xlsb` puis validez.
-Ajouter les données du fichier à celles déjà présentes dans la linelist.
+Ajoutez les données du fichier à celles déjà présentes dans la linelist.
 A la fin de l'import, on vous demandera si vous voulez voir un rapport. 
 Sélectionnez "Oui".
 
 
 ::: {.callout-tip title="Question" icon="false"}
 
-Quelles sont les variables qui ne sont pas disponibles dans les données importées?
+Quelles sont les variables qui ne sont pas disponibles dans les données importées ?
 
 :::
 
